@@ -1,7 +1,6 @@
 # Desglose del Trabajo (WBS) — MVP 3D PC Builder (3 meses)
 
 > Solo incluye actividades para el **MVP** a entregar en diciembre.  
-> Funciones excluidas: “Explorar componentes”, guardar/cargar ensambles, y extras avanzados.
 
 ## 1. Análisis
 | ID   | Tarea                          | Entregable                          | Responsable |
