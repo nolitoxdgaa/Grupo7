@@ -1,4 +1,4 @@
-# Categorización lógica de requisitos (Organización de los requisitos de usuario)
+# Categorización lógica de requisitos
 
 La categorización de requisitos en este proyecto permite organizar las funcionalidades del software educativo. De esta forma se distinguen las características esenciales , las mejoras que enriquecen la experiencia y aquellas que no aportan al objetivo planteado.
 
