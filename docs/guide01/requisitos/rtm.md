@@ -65,7 +65,6 @@ Retroalimentación visual (ejemplo en GUI)
 método mostrarError(mensaje):
     GUI.mostrarPopup(colorRojo, mensaje)
 ```
-I'd be glad to help! Here is the text from the image converted to Markdown format, which is perfect for a GitHub repository.
 
 ---
 
