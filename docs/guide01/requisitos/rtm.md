@@ -1,26 +1,127 @@
-# Especificación de requisitos de software
+# Especificación de Requisitos de Software (ERS)
 
-## Requisitos funcionales
-Los requisitos funcionales se expresan en lenguaje técnico a partir de los requisitos funcionales mandatorios que se han identificado en la categorización de requisitos de usuario.
-Ello implica el desarrollo de los siguientes puntos:
-- Puede escribirse en pseudocódigo incluyendo anotaciones de fórmulas de cálculo matemático según sea el caso. Este escenario es factible cuando el requisito ha sido claramente definido y validado
-  por el usuario/cliente.
-- Formato de interfaz de usuario y GUI como parte de la capa de presentación (Front End) del aplicativo de software: Incluye la interfaz de usuario para el sistema como propuesta inicial a las necesidades
-  del cliente. Deberá incluirlo en el Anexo “A”. Este escenario es factible cuando los requisitos no se encuentran definidos desde la perspectiva del usuario o existe dificultad para su obtención y entendimiento.
-  Puede utilizar cualquier herramienta mockup libre para diseñar sus interfaces: https://careerfoundry.com/en/blog/ux-design/free-wireframing-tools/
-  
-## Requisitos no funcionales
-- Portabilidad del software
-- Facilidad de mantenimiento: Que implica el grado de conocimiento de la herramienta de desarrollo del software, así como de la disponibilidad de personal técnico apropiado entre otros.
-- Usabilidad del software
-- Velocidad de procesamiento de datos
-- Restricciones técnicas del software: Por ejemplo, restricciones de diseño debido al sistema operativo utilizado, el entorno de la plataforma, problemas de compatibilidad con alguna aplicación interna o
-  externa a la organización, estándar para alguna aplicación determinada, entre otros.
+---
 
+## 1. Requisitos Funcionales
 
-# Tips para mayor claridad
-## Propósito
-Definir los requisitos técnicos mínimos (RTM) del proyecto de software.
+Los requisitos funcionales se derivan de los objetivos del proyecto y definen las acciones que el sistema debe realizar.
 
-## Qué se espera
-- Que sea el imput para el desglose de tareas de la planificación del proyecto, para su posterior diseño e implementación.
+### 1.1 Tabla de requisitos funcionales
+
+| ID  | Requisito Funcional             | Descripción |
+|-----|---------------------------------|-------------|
+| RF1 | Interacción con componentes     | El usuario podrá seleccionar, arrastrar y colocar piezas dentro del entorno 3D. |
+| RF2 | Ensamblaje de PC en 3D          | El sistema debe permitir al usuario ensamblar una computadora paso a paso. |
+| RF3 | Validación del ensamblaje       | El sistema debe validar si los componentes ensamblados son compatibles. |
+| RF4 | Retroalimentación al usuario    | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
+| RF5 | Interfaz intuitiva              | El sistema contará con una interfaz gráfica que permita acceder al modo ensamblado y opciones básicas. |
+
+---
+
+### 1.2 Pseudocódigo en POO (vista general)
+
+```pseudo
+Clase Componente {
+    atributos: id, nombre, tipo, compatibilidad
+    método mostrarInfo()
+}
+
+Clase Ensamble {
+    atributos: listaComponentes
+    método agregarComponente(componente)
+    método validarCompatibilidad()
+    método mostrarResultado()
+}
+
+Clase Usuario {
+    atributos: nombre, progreso
+    método iniciarSesion()
+    método seleccionarComponente()
+    método ensamblar()
+}
+```
+###1.3 Ejemplos de funciones clave en pseudocódigo
+
+Validación de error al agregar un componente incompatible
+```pseudo
+método agregarComponente(componente):
+    si validarCompatibilidad(componente) == falso:
+        mostrarError("El componente no es compatible con el ensamble actual.")
+    sino:
+        listaComponentes.agregar(componente)
+```
+
+Tip de seguridad (ejemplo fuente de poder insuficiente)
+```pseudo
+método validarCompatibilidad():
+    si consumoTotal > capacidadFuente:
+        mostrarAdvertencia("La fuente de poder seleccionada no cubre el consumo.")
+        retornar falso
+    retornar verdadero
+```
+
+Retroalimentación visual (ejemplo en GUI)
+```pseudo
+método mostrarError(mensaje):
+    GUI.mostrarPopup(colorRojo, mensaje)
+```
+I'd be glad to help! Here is the text from the image converted to Markdown format, which is perfect for a GitHub repository.
+
+---
+
+### 1.4 Ejemplos de fórmulas matemáticas utilizadas
+
+* **Consumo energético total del ensamble**
+
+    $$ConsumoTotal = \sum_{i=1}^{n} TDP_{componente_{i}}$$
+
+* **Compatibilidad de memoria RAM y placa base**
+
+    $$Compatibilidad = (TipoRAM_{seleccionada} == TipoRAM_{placaBase})$$
+
+* **Relación de potencia de fuente**
+
+    $$CapacidadFuente \ge ConsumoTotal \times 1.2$$
+
+Claro, aquí tienes el texto que proporcionaste en formato Markdown, ideal para su uso en GitHub.
+
+---
+
+### 1.5 Interfaz de Usuario (GUI)
+
+La propuesta inicial de la interfaz gráfica (GUI) se incluirá en el Anexo A.
+
+Se recomienda utilizar herramientas de wireframing gratuitas como Figma o Balsamiq.
+
+**Pantallas previstas:**
+
+- **Menú principal:** botones `Explorar componentes` y `Armar PC`.
+- **Pantalla de ensamblaje:** zona 3D a la izquierda, catálogo de componentes a la derecha, mensajes en la parte inferior.
+- **Pantalla de validaciones/advertencias.**
+
+---
+
+### 2. Requisitos No Funcionales
+
+Los requisitos no funcionales definen criterios de calidad, limitaciones técnicas y condiciones de uso.
+
+| Categoría | Especificación |
+| :--- | :--- |
+| **Portabilidad** | El sistema debe ejecutarse en laptops con Windows 10 o superior, con GPU dedicada (RTX 3060 o similar). |
+| **Mantenibilidad** | El código será modular en C# (Unity) y Python, con control de versiones en GitHub y documentación en README. |
+| **Usabilidad** | La interfaz debe ser intuitiva y accesible para usuarios principiantes, con mensajes de error claros. |
+| **Velocidad de procesamiento** | La aplicación debe mantener una tasa mínima de 30 FPS en simulación 3D para asegurar una experiencia fluida. |
+| **Restricciones técnicas** | El desarrollo estará limitado a herramientas de libre acceso: Unity (C#), Blender, Python. Sistema operativo Windows 10+. No habrá integración con sistemas externos en el MVP. |
+
+---
+
+### 3. Observaciones Generales
+
+El MVP se enfocará únicamente en:
+- Ensamblar PC en 3D (RF2).
+- Validar compatibilidad (RF3).
+- Retroalimentación con errores/advertencias (RF4).
+
+Funcionalidades como guardar/cargar ensambles o explorar componentes sin ensamblar no se desarrollarán en esta primera fase.
+
+El alcance y las restricciones fueron definidos tomando en cuenta el tiempo disponible (3 meses), el nivel básico del equipo y la disponibilidad de recursos propios.
