@@ -1,8 +1,11 @@
-# Guía 01 — "GUIA DE APRENDIZAJE PARA LA PLANIFICACIÓN DE UN PROYECTO DE SOFTWARE"
+# Introducción
 
-Breve descripción.
-Los equipos de desarrollo podrán formular sus proyectos de software de la siguiente forma:
-- Propuesta del equipo: Podrán generar una propuesta de proyecto a partir de alguna necesidad de información de caracter general que no necesite un cliente en específico sino mas bien representa un dominio de negocio determinado.
-- Propuesta del docente: La docente puede proponer proyectos de desarrollo los cuales podran ser coordinados con los equipos de desarrollo que tengan dificultades para formular su propuesta.
-- A solicitud de un cliente real. El equipo de desarrollo debe tener acceso al cliente para realizar las tareas de recopilación de requisitos y para la etapa de pruebas del software desde la perspectiva de aceptación del usuario.
-En cualquier caso, la docente cumple el rol de supervisor del proyecto.
+El presente proyecto surge en el marco del curso **Procesos de Software** con el objetivo de aplicar de manera práctica los conocimientos adquiridos en la planificación, diseño y desarrollo de sistemas informáticos.  
+
+La propuesta principal del **equipo de desarrollo** consiste en crear una aplicación que permita a los usuarios visualizar el proceso de armado de una computadora, mostrando los componentes necesarios, su compatibilidad y ofreciendo información adicional que facilite la toma de decisiones al momento de adquirir o ensamblar un equipo.  
+
+Como alternativa, la **docente del curso** planteó un conjunto de proyectos orientados al fortalecimiento de habilidades en el ciclo de vida del software. Estas propuestas sirven de guía para aquellos equipos que presentan dificultades en la definición de un problema concreto, brindando acompañamiento y asesoría para orientar la planificación del trabajo.  
+
+Por otro lado, el **escenario de cliente real** se materializó a través de las encuestas aplicadas a potenciales usuarios, quienes expresaron sus necesidades, intereses y expectativas en relación con una herramienta que facilite el aprendizaje y comprensión sobre el armado de PCs. Estas respuestas se consideran como insumos clave para la definición de requisitos y para la futura validación del producto.  
+
+En este contexto, la docente cumple el rol de supervisora, garantizando el cumplimiento de los objetivos académicos del curso, mientras que el equipo de desarrollo se responsabiliza de transformar las necesidades identificadas en un proyecto de software viable y con aplicación práctica.  
