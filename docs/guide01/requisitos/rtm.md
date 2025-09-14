@@ -82,8 +82,6 @@ método mostrarError(mensaje):
 
     $$CapacidadFuente \ge ConsumoTotal \times 1.2$$
 
-Claro, aquí tienes el texto que proporcionaste en formato Markdown, ideal para su uso en GitHub.
-
 ---
 
 ### 1.5 Interfaz de Usuario (GUI)
