@@ -8,13 +8,14 @@ Los requisitos funcionales se derivan de los objetivos del proyecto y definen la
 
 ### 1.1 Tabla de requisitos funcionales
 
-| ID  | Requisito Funcional             | Descripción |
-|-----|---------------------------------|-------------|
-| RF1 | Interacción con componentes     | El usuario podrá seleccionar, arrastrar y colocar piezas dentro del entorno 3D. |
-| RF2 | Ensamblaje de PC en 3D          | El sistema debe permitir al usuario ensamblar una computadora paso a paso. |
-| RF3 | Validación del ensamblaje       | El sistema debe validar si los componentes ensamblados son compatibles. |
-| RF4 | Retroalimentación al usuario    | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
-| RF5 | Interfaz intuitiva              | El sistema contará con una interfaz gráfica que permita acceder al modo ensamblado y opciones básicas. |
+| ID  | Requisito Funcional           | Descripción |
+|-----|-------------------------------|-------------|
+| RF1 | Interacción con componentes   | El usuario podrá seleccionar, arrastrar y colocar piezas dentro del entorno 3D. |
+| RF2 | Ensamblaje de PC en 3D        | El sistema debe permitir al usuario ensamblar una computadora paso a paso. |
+| RF3 | Validación del ensamblaje     | El sistema debe validar si los componentes ensamblados son compatibles. |
+| RF4 | Retroalimentación al usuario  | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
+| RF5 | Generar reporte               | El sistema debe permitir generar un reporte con el detalle del ensamblaje realizado por el usuario. |
+| RF6 | Acceder a biblioteca          | El sistema debe permitir al usuario acceder a una biblioteca de componentes con información adicional. |
 
 ---
 
