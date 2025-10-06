@@ -43,6 +43,8 @@ Otros requisitos como **ejercicios bajo presupuesto, videos, asistente de IA, mu
 
 ## Anexo A: Técnicas de obtención de requisitos de software  
 
+https://www.notion.so/Obtenci-n-de-requisitos-25d24e974ef681858740eb9abf62d2c0
+
 Para recopilar los requisitos se utilizaron las siguientes técnicas:  
 
 - **Encuestas**: aplicadas a estudiantes y usuarios potenciales, con el fin de recopilar expectativas y preferencias sobre el funcionamiento del sistema.  
