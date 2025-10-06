@@ -87,15 +87,14 @@ método mostrarError(mensaje):
 
 ### 1.5 Interfaz de Usuario (GUI)
 
-La propuesta inicial de la interfaz gráfica (GUI) se incluirá en el Anexo A.
+<img width="1032" height="577" alt="image" src="https://github.com/user-attachments/assets/ff733bd9-eafd-46ad-b5ba-c1093037c3ee" />
 
-Se recomienda utilizar herramientas de wireframing gratuitas como Figma o Balsamiq.
+<img width="1034" height="575" alt="image" src="https://github.com/user-attachments/assets/085cbf12-877f-4879-9821-ea1e10f5a866" />
 
-**Pantallas previstas:**
+<img width="1031" height="575" alt="image" src="https://github.com/user-attachments/assets/cc34f8b9-0548-46b4-ad96-72c5bef83686" />
 
-- **Menú principal:** botones `Explorar componentes` y `Armar PC`.
-- **Pantalla de ensamblaje:** zona 3D a la izquierda, catálogo de componentes a la derecha, mensajes en la parte inferior.
-- **Pantalla de validaciones/advertencias.**
+
+
 
 ---
 
