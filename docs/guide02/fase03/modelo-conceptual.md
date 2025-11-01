@@ -1,8 +1,8 @@
-## Modelo conceptual de datos
+# Modelo Conceptual de Datos
 
-Para ello, deberá diseñar el Método Entidad-Relación utilizando una herramienta gráfica de su preferencia. Considerar lo siguiente:
+El modelo entidad-relación está compuesto por las siguientes entidades principales:
 
-- Utilizar los símbolos y gráficos de notación correspondiente al modelo ER
-- Debe haber coherencia con los diagramas de caso de uso y éstos a su vez con el diagrama de procesos.
-- Generar y subir la imagen en formato .png, .jpg
-- Resolución de la imagen de 300 dpi por cada imagen.
+- **Componente** (ID, nombre, tipo, precio, descripción)
+- **Compatibilidad** (ID, componenteA, componenteB, estado)
+- **Configuración** (ID, usuario, fecha, precio_total)
+
