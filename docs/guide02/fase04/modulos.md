@@ -1,9 +1,49 @@
 # Módulos del Prototipo
 
-El sistema **3D PC Builder** está compuesto por los siguientes módulos principales:
+El prototipo **3D PC Builder** está estructurado en módulos que permiten una implementación ordenada y escalable.  
+Cada módulo cumple una función específica dentro del flujo del sistema, y todos están integrados mediante el patrón **MVC (Modelo–Vista–Controlador)** adoptado en la fase anterior.
 
-1. **Gestor de Componentes:** Controla la carga y visualización 3D.  
-2. **Verificador de Compatibilidad:** Analiza relaciones entre componentes.  
-3. **Cálculo de Precios:** Actualiza precios en tiempo real.  
-4. **Gestor de Configuración:** Permite guardar y cargar configuraciones.  
-5. **Interfaz de Usuario:** Permite la interacción directa del usuario con el entorno 3D.
+## 1. Módulo de Gestión de Componentes
+- **Objetivo:** Controlar la carga, almacenamiento y representación 3D de los componentes de hardware.  
+- **Funciones principales:**
+  - Cargar modelos 3D desde la carpeta “Assets/Models”.
+  - Asociar atributos técnicos (tipo, nombre, precio, socket, etc.) a cada componente.
+  - Permitir la rotación, zoom y manipulación visual dentro de Unity.
+- **Entradas:** Datos de componentes (archivos `.obj` o `.fbx`, precios y descripciones).  
+- **Salidas:** Objetos 3D interactivos visibles en el entorno virtual.
+
+## 2. Módulo de Ensamblaje Virtual
+- **Objetivo:** Permitir al usuario armar una PC simulando el proceso real de montaje.  
+- **Funciones:**
+  - Interfaz de arrastre (drag & drop) para colocar componentes en el gabinete.
+  - Validación automática de compatibilidad.
+  - Indicadores visuales (colores o mensajes) que guían al usuario.
+- **Interacción:** Directamente desde la cámara principal de Unity con eventos del mouse o teclado.
+
+## 3. Módulo de Compatibilidad y Validación
+- **Objetivo:** Comprobar que los componentes seleccionados funcionen entre sí.  
+- **Lógica de negocio:**
+  - Comparación de sockets, tipo de memoria, fuente de poder y conectores.
+  - Muestra alertas visuales y sonoras ante incompatibilidades.
+- **Ejemplo:** CPU con socket AM5 sólo puede conectarse con una placa base AM5.
+
+## 4. Módulo de Cálculo de Precio
+- **Objetivo:** Mostrar el costo total de la configuración en tiempo real.  
+- **Funciones:**
+  - Sumar los precios de los componentes seleccionados.
+  - Actualizar la interfaz automáticamente al agregar o eliminar un elemento.
+  - Mostrar desglose por componente y total general.
+
+## 5. Módulo de Gestión de Configuraciones
+- **Objetivo:** Guardar, cargar y exportar configuraciones creadas por el usuario.  
+- **Funciones:**
+  - Almacenar la selección en un archivo JSON local.
+  - Permitir reabrir configuraciones previamente guardadas.
+  - Exportar la lista de componentes y precios a PDF o CSV (futuro).
+
+## 6. Módulo de Interfaz de Usuario (UI)
+- **Objetivo:** Facilitar la navegación y comprensión de las funciones del sistema.  
+- **Características:**
+  - Panel lateral con categorías de componentes.
+  - Ventanas emergentes (pop-ups) con detalles técnicos.
+  - Botones para guardar, reiniciar y salir.
