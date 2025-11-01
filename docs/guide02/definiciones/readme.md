@@ -11,10 +11,10 @@ Su objetivo es servir como herramienta de apoyo a estudiantes de **ingeniería d
 
 ## Definiciones tecnológicas
 - **Unity:** Motor de desarrollo utilizado para la creación de experiencias interactivas 3D.
-- **C#:** Lenguaje de programación empleado para el desarrollo de la lógica del sistema dentro de Unity.
+- **C#:** Lenguaje de programación empleado para la lógica del sistema dentro de Unity.
 - **Blender:** Herramienta de modelado 3D utilizada para la creación de los modelos de componentes.
-- **Build:** Versión compilada y ejecutable del proyecto en un entorno determinado.
-- **Renderizado:** Proceso mediante el cual se genera la visualización final de los modelos 3D en tiempo real.
+- **Build:** Versión compilada y ejecutable del proyecto.
+- **Renderizado:** Proceso de generación visual de los modelos 3D en tiempo real.
 
 ## Abreviaturas
 - **CPU:** Central Processing Unit  
