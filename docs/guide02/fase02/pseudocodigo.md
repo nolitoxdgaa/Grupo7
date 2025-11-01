@@ -16,6 +16,7 @@ Inicio
   FinPara
 Fin
 
+---
 **Objetivo:** Evitar que el usuario combine componentes técnicamente incompatibles y reforzar la comprensión de los parámetros de compatibilidad.
 
 ---
