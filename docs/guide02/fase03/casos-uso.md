@@ -1,8 +1,17 @@
-## Diagrama de casos de uso
+# Diagrama de Casos de Uso
 
-Diagramas y documentación de cada uno de los casos de uso. Con respecto a la documentación de los casos de uso, incluirán lo siguiente:
-- Además de los datos del encabezado del CU, incluirán flujo principal y reglas de negocio como mínimo.
-- Usar la herramienta gráfica de su preferencia
-- Mantener la notación UML de los casos de uso (relaciones include y exclude)
-- Subir las imagenes en formato .png, .jpg.
-- Resolución de 300 dpi para cada imagen.
+Los siguientes casos de uso describen la interacción principal entre el usuario y el sistema **3D PC Builder**.
+
+## Casos principales:
+1. Visualizar componentes
+2. Ensamblar componentes
+3. Validar compatibilidad
+4. Calcular precio total
+5. Guardar configuración
+
+*(Incluir imagen del diagrama UML en formato .png o .jpg con 300 dpi)*
+
+Cada caso de uso incluirá:
+- Actor: Usuario
+- Flujo principal: Selecciona componentes → Ensambla → Valida → Guarda
+- Reglas de negocio: Solo se permiten combinaciones compatibles entre componentes.
