@@ -1,14 +1,46 @@
-# Formato de las Interfaces de Usuario
+# Formato de las Interfaces de Usuario (Mockups)
 
-En esta sección se presentan los **mockups** desarrollados para el prototipo del sistema **3D PC Builder**, elaborados con herramientas de diseño digital y esquematización de interfaz (como Figma o Balsamiq).
+Las siguientes interfaces fueron diseñadas como **mockups de referencia** para la etapa de desarrollo del sistema **3D PC Builder**.  
+Fueron elaboradas en **Figma** y adaptadas posteriormente en Unity durante la implementación del entorno 3D.
 
-## Interfaz 1: Pantalla principal
-Muestra el entorno 3D del ensamblador virtual y el menú lateral con las categorías de componentes.
+---
 
-## Interfaz 2: Detalle de componente
-Ventana emergente con información técnica del componente seleccionado, imagen 3D y botón “Agregar”.
+## Interfaz 1 — Pantalla de Inicio
+- Contiene el logotipo y nombre del sistema.  
+- Menú principal con opciones: “Nuevo Ensamblaje”, “Cargar Configuración”, “Salir”.  
+- Diseño con fondo tecnológico y botones con efecto hover.  
+- Objetivo: ofrecer una entrada limpia y directa al entorno 3D.
 
-## Interfaz 3: Ensamblaje completo
-Vista general de la PC ensamblada con opción de guardar configuración y ver precio total.
+---
 
-*(Se deben subir las imágenes correspondientes en formato .png o .jpg a esta carpeta con resolución de 300 dpi.)*
+## Interfaz 2 — Vista de Ensamblaje
+- Espacio principal de trabajo donde se ubica el gabinete 3D.  
+- Panel lateral con las categorías: CPU, GPU, RAM, Almacenamiento, Placa Madre, PSU.  
+- Indicadores de compatibilidad (colores verde/rojo).  
+- Zona inferior con el **precio total dinámico**.  
+- Objetivo: representar la acción práctica del armado de una PC.
+
+---
+
+## Interfaz 3 — Detalle de Componente
+- Ventana emergente con la vista 3D del componente seleccionado.  
+- Muestra atributos: nombre, tipo, socket, precio, consumo energético.  
+- Botones: “Agregar al Ensamblaje” / “Cancelar”.  
+- Objetivo: ofrecer información técnica y visual en un formato educativo.
+
+---
+
+## Interfaz 4 — Configuración Guardada
+- Lista de configuraciones almacenadas en JSON.  
+- Botones: “Cargar”, “Eliminar”, “Exportar PDF”.  
+- Permite reabrir proyectos anteriores fácilmente.
+
+---
+
+*(Insertar mockups o capturas en formato .png o .jpg, resolución mínima 300 dpi.)*
+
+## Consideraciones de diseño
+- Paleta de colores: tonos grises y azules con acentos naranjas para destacar acciones.  
+- Tipografía legible y moderna.  
+- Diseño minimalista enfocado en la funcionalidad y comprensión visual.  
+- Estructura pensada para usabilidad tanto con mouse como con pantallas táctiles.
