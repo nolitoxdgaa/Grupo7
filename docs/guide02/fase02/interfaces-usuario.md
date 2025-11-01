@@ -1,7 +1,14 @@
-## Formato de las interfaces de usuario utilizando herramientas Mockups
+# Formato de las Interfaces de Usuario
 
-En esta sección presentaran los diseños de interfaz de usuario que elaboraron utilizando herramientas Mockups. Considerar lo siguiente:
+En esta sección se presentan los **mockups** desarrollados para el prototipo del sistema **3D PC Builder**, elaborados con herramientas de diseño digital y esquematización de interfaz (como Figma o Balsamiq).
 
-- El uso de la técnica de prototipo usando mockups es mandatorio como parte de las técnicas de recopilación de información.
-- Pueden presentar de igual forma: Minimo 02 y Máximo 03 interfaces.
-- Pueden subir el archivo de la imagen de la interfaz en formato .png, .jpg
+## Interfaz 1: Pantalla principal
+Muestra el entorno 3D del ensamblador virtual y el menú lateral con las categorías de componentes.
+
+## Interfaz 2: Detalle de componente
+Ventana emergente con información técnica del componente seleccionado, imagen 3D y botón “Agregar”.
+
+## Interfaz 3: Ensamblaje completo
+Vista general de la PC ensamblada con opción de guardar configuración y ver precio total.
+
+*(Se deben subir las imágenes correspondientes en formato .png o .jpg a esta carpeta con resolución de 300 dpi.)*
