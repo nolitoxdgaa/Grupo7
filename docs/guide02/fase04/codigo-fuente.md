@@ -1,6 +1,22 @@
-## Código fuente
+# Código Fuente del Prototipo
 
-Código fuente de las funciones más importantes del software. Para ello:
+A continuación se muestran fragmentos del código más relevante del sistema **3D PC Builder**, desarrollado en **C#** dentro del entorno **Unity**.  
+El código sigue principios de orientación a objetos y estructura modular, priorizando la mantenibilidad y claridad.
 
-- Puede escribirlo en el estilo markdown de GitHub o puede subir la imagen de las rutinas más importantes.
-- En caso sea la imagen, deberá ser en formato .png, .jpg y con resolución de 300 dpi.
+---
+
+## Ejemplo 1: Carga dinámica de componentes
+```csharp
+using UnityEngine;
+using System.Collections.Generic;
+
+public class ComponentLoader : MonoBehaviour {
+    public List<GameObject> components;
+    public Transform spawnPoint;
+
+    void Start() {
+        foreach (GameObject comp in components) {
+            Instantiate(comp, spawnPoint.position, Quaternion.identity);
+        }
+    }
+}
