@@ -1,6 +1,11 @@
-## Diagrama de procesos
+# Diagrama de Procesos
 
-Diagrama de procesos del negocio del prototipo de software. Para ello utilizaran la herramienta Bizagi Modeler.
+El diagrama representa el flujo de trabajo del usuario dentro del sistema:
 
-- Deberán subir la(s) imágenes de los diagramas en formato .png, .jpg
-- Se recomienda utilizar resolución de 300 dpi para cada imagen.
+1. Selección de componentes
+2. Validación de compatibilidad
+3. Visualización 3D
+4. Cálculo de precio
+5. Guardado o exportación
+
+*(El diagrama se elaborará en Bizagi Modeler y se exportará en formato .png o .jpg con resolución 300 dpi.)*
