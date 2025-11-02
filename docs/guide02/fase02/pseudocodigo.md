@@ -5,17 +5,18 @@ Los siguientes pseudocódigos representan los procesos fundamentales que garanti
 ---
 
 ## Pseudocódigo 1 — Verificación de Compatibilidad
+```pseudocode
 Inicio
     Para cada componente seleccionado en la lista
-      Comparar tipo y atributos técnicos (socket, potencia, conector)
-      Si existe incompatibilidad
-        Mostrar alerta visual y sonora
-      Sino
-        Mostrar mensaje "Componente compatible"
-      FinSi
-  FinPara
+        Comparar tipo y atributos técnicos (socket, potencia, conector)
+        Si existe incompatibilidad
+            Mostrar alerta visual y sonora
+        Sino
+            Mostrar mensaje "Componente compatible"
+        FinSi
+    FinPara
 Fin
-
+```
 ---
 **Objetivo:** Evitar que el usuario combine componentes técnicamente incompatibles y reforzar la comprensión de los parámetros de compatibilidad.
 
