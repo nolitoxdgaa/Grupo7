@@ -1,32 +1,24 @@
-# ✅ Requisitos Funcionales Mandatorios
+# Requisitos No Funcionales
 
-Los requisitos funcionales mandatorios definen las **funcionalidades esenciales que el sistema 3D PC Builder debe implementar obligatoriamente** para cumplir su propósito principal: permitir al usuario simular, visualizar y construir una computadora de manera virtual.  
-Sin el cumplimiento de estos requisitos, el software no podría considerarse funcional ni alineado a sus objetivos de diseño.
+Los **requisitos no funcionales** definen los **criterios de calidad, las limitaciones técnicas y las condiciones de uso** bajo las cuales debe operar el sistema **3D PC Builder**.  
+Estos requisitos no describen funciones específicas del software, sino las **características de desempeño, compatibilidad y mantenimiento** que garantizan su correcto funcionamiento y experiencia de usuario.
 
 ---
 
-## ⚙️ Lista de requisitos mandatorios
+## Lista de requisitos no funcionales
 
-1. **Visualización 3D interactiva de los componentes y del ensamblaje.**  
-   El sistema debe permitir observar los modelos tridimensionales de cada pieza de hardware y su ubicación dentro del gabinete virtual.
+1. **Portabilidad.**  
+   El sistema debe ejecutarse en equipos portátiles o de escritorio con **Windows 10 o superior**, que cuenten con una **GPU dedicada** (RTX 3060 o equivalente) para garantizar el rendimiento adecuado de la simulación 3D.
 
-2. **Visualización rápida y detallada de la información técnica.**  
-   Cada componente debe mostrar su nombre, tipo, precio, descripción y especificaciones relevantes al seleccionarse.
+2. **Mantenibilidad.**  
+   El código fuente debe estar estructurado de forma **modular**, empleando los lenguajes **C# (Unity)** y **Python**, con control de versiones mediante **GitHub** y documentación técnica detallada en el archivo **README.md**.
 
-3. **Validación automática de compatibilidad entre componentes.**  
-   El sistema debe verificar que las piezas seleccionadas puedan funcionar juntas (por ejemplo, procesador y placa base compatibles).
+3. **Usabilidad.**  
+   La interfaz gráfica debe ser **intuitiva y accesible**, orientada a usuarios principiantes, con mensajes de error claros, instrucciones breves y una navegación coherente entre pantallas.
 
-4. **Notificación de errores o incompatibilidades.**  
-   Cuando se detecte una incompatibilidad, el sistema debe mostrar mensajes claros y sugerencias de corrección.
+4. **Velocidad de procesamiento.**  
+   La aplicación debe mantener una **tasa mínima de 30 cuadros por segundo (FPS)** durante la visualización y ensamblaje 3D, asegurando una experiencia fluida y estable.
 
-5. **Incorporación de tips o alertas de seguridad.**  
-   Durante el proceso de ensamblaje, se deben mostrar consejos para evitar errores comunes o malas prácticas de armado.
-
-6. **Ejecución en entorno de PC (plataforma principal).**  
-   El prototipo debe ser funcional en equipos de escritorio o portátiles, sin depender de plataformas externas.
-
-7. **Operación sin conexión a Internet.**  
-   El sistema debe poder ejecutarse localmente, sin requerir conexión activa a la red.
-
-8. **Rendimiento fluido en equipos de gama media.**  
-   La aplicación debe mantener una experiencia estable, con carga rápida de modelos 3D y sin caídas de rendimiento notorias.
+5. **Restricciones técnicas.**  
+   El desarrollo debe limitarse al uso de **herramientas y librerías de libre acceso**, como **Unity (C#)**, **Blender** y **Python**, ejecutándose exclusivamente en sistemas **Windows 10 o superior**.  
+   En la versión **MVP** (Producto Mínimo Viable) no se considerará la integración con servicios o sistemas externos.
