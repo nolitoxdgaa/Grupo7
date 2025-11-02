@@ -3,36 +3,71 @@
 Las siguientes interfaces fueron diseñadas como **mockups de referencia** para la etapa de desarrollo del sistema **3D PC Builder**.  
 Fueron elaboradas en **Figma** y adaptadas posteriormente en Unity durante la implementación del entorno 3D.
 
----
+##  Interfaz 1 — Menú Principal
 
-## Interfaz 1 — Pantalla de Inicio
-- Contiene el logotipo y nombre del sistema.  
-- Menú principal con opciones: “Nuevo Ensamblaje”, “Cargar Configuración”, “Salir”.  
-- Diseño con fondo tecnológico y botones con efecto hover.  
-- Objetivo: ofrecer una entrada limpia y directa al entorno 3D.
+### Descripción
+La interfaz inicial del sistema ofrece un menú de navegación sencillo y organizado.  
+Aquí el usuario puede elegir entre distintas opciones que lo dirigirán a las secciones principales de la aplicación:
+- **Componentes:** para acceder al listado de piezas del computador y revisar sus características.  
+- **Armado:** para ingresar al entorno donde se realiza la simulación del ensamble.  
+- **Salir:** para cerrar la aplicación.
 
----
+El diseño se mantiene limpio y estructurado, con botones grandes y etiquetas claras que facilitan su uso incluso para usuarios sin experiencia previa en simuladores 3D.
 
-## Interfaz 2 — Vista de Ensamblaje
-- Espacio principal de trabajo donde se ubica el gabinete 3D.  
-- Panel lateral con las categorías: CPU, GPU, RAM, Almacenamiento, Placa Madre, PSU.  
-- Indicadores de compatibilidad (colores verde/rojo).  
-- Zona inferior con el **precio total dinámico**.  
-- Objetivo: representar la acción práctica del armado de una PC.
+### Objetivo
+Proporcionar un punto de entrada visualmente atractivo y funcional, que permita al usuario orientarse rápidamente dentro del sistema.  
+Esta interfaz marca el inicio del flujo lógico de interacción: **Inicio → Exploración → Ensamblaje.**
 
 ---
 
-## Interfaz 3 — Detalle de Componente
-- Ventana emergente con la vista 3D del componente seleccionado.  
-- Muestra atributos: nombre, tipo, socket, precio, consumo energético.  
-- Botones: “Agregar al Ensamblaje” / “Cancelar”.  
-- Objetivo: ofrecer información técnica y visual en un formato educativo.
+##  Interfaz 2 — Información de Componentes
+
+### Descripción
+En esta sección, el usuario puede explorar en detalle cada componente del hardware que conforma una PC.  
+La interfaz presenta un diseño dividido por categorías (CPU, GPU, Placa Madre, RAM, Fuente de Poder, entre otros), donde cada elemento incluye:
+- Una breve **descripción funcional** que explica para qué sirve el componente.  
+- Datos **técnicos relevantes**, como compatibilidad de socket, potencia, frecuencia o consumo.  
+- Imágenes o íconos representativos que facilitan la identificación visual.
+
+### Objetivo
+Esta interfaz busca **informar y educar** al usuario sobre los distintos elementos que intervienen en el armado de una computadora.  
+Antes de proceder con la simulación del ensamble, el usuario puede comprender cómo interactúan los componentes entre sí y tomar decisiones correctas sobre compatibilidad.
+
+Además, esta sección fortalece el enfoque pedagógico del proyecto, aportando un valor didáctico más allá de la simulación visual.
 
 ---
 
-## Interfaz 4 — Configuración Guardada
-- Lista de configuraciones almacenadas en JSON.  
-- Botones: “Cargar”, “Eliminar”, “Exportar PDF”.  
+##  Interfaz 3 — Armado de la PC
+
+### Descripción
+Esta es la vista principal y más interactiva del sistema.  
+En ella, el usuario puede **simular el proceso real de ensamblaje de una PC** en un entorno tridimensional.  
+El espacio de trabajo incluye:
+- Un **modelo 3D del gabinete** y los componentes internos.
+- Opciones para **agregar o quitar piezas**, verificando su compatibilidad.  
+- Indicadores visuales y mensajes de advertencia en caso de incompatibilidad entre componentes.
+- Información resumida de cada componente seleccionado.
+- Visualización en tiempo real del **precio total** o estado del armado completo.
+
+El diseño está enfocado en brindar una experiencia práctica e inmersiva, fomentando la comprensión visual del proceso de ensamblaje y reforzando el aprendizaje sobre la estructura interna del hardware.
+
+### Objetivo
+Ofrecer al usuario una experiencia interactiva que combine **aprendizaje y simulación realista**.  
+La interfaz busca representar de manera clara cómo se integran los distintos componentes en una PC funcional, resaltando la importancia de la compatibilidad y el orden en el montaje.
+
+---
+
+##  Flujo de Uso del Sistema
+
+El recorrido del usuario dentro de **3D PC Builder** sigue una secuencia lógica e intuitiva:
+1. **Inicio (Menú Principal):** el usuario selecciona la acción que desea realizar.  
+2. **Consulta (Información de Componentes):** aprende sobre las partes que integran un computador.  
+3. **Simulación (Armado de PC):** ensambla visualmente su equipo y verifica compatibilidades.
+
+Este flujo garantiza una experiencia progresiva, educativa y fácil de comprender, cumpliendo con los criterios de diseño, usabilidad y funcionalidad requeridos por el proyecto.
+
+---
+
 - Permite reabrir proyectos anteriores fácilmente.
 
 <img width="1032" height="577" alt="497609067-ff733bd9-eafd-46ad-b5ba-c1093037c3ee" src="https://github.com/user-attachments/assets/9d73636b-8b85-4a89-850a-24d6801d4234" />
@@ -42,7 +77,11 @@ Fueron elaboradas en **Figma** y adaptadas posteriormente en Unity durante la im
 ---
 
 ## Consideraciones de diseño
-- Paleta de colores: tonos grises y azules con acentos naranjas para destacar acciones.  
-- Tipografía legible y moderna.  
-- Diseño minimalista enfocado en la funcionalidad y comprensión visual.  
-- Estructura pensada para usabilidad tanto con mouse como con pantallas táctiles.
+---
+
+##  Consideraciones de Diseño
+
+- El diseño de las interfaces se basó en principios de **claridad, coherencia y usabilidad**.  
+- Se mantuvo una paleta de colores neutra y moderna, con botones visibles y tipografía legible para facilitar la navegación.  
+- Cada pantalla sigue una **estructura jerárquica** que guía al usuario desde la información teórica hasta la interacción práctica.  
+- Además, se priorizó la **simplicidad visual** para evitar distracciones y mantener el enfoque en el objetivo del sistema: aprender y simular el armado de una PC de manera intuitiva y didáctica.
