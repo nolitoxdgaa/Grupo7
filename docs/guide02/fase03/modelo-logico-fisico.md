@@ -78,8 +78,7 @@ Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:
 
 ---
 
-## Instrucción para incluir el diagrama
+![Imagen de WhatsApp 2025-11-02 a las 02 28 51_e8919629](https://github.com/user-attachments/assets/d4c48839-6ea5-4124-a72e-0bc301ea5270)
 
-> Incluir el **modelo físico de base de datos** exportado desde **MySQL Workbench** en formato `.png` o `.jpg` con resolución de **300 dpi**, asegurando que todas las entidades, relaciones y cardinalidades sean legibles.
 
 
