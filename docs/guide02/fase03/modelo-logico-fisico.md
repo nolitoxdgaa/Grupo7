@@ -1,13 +1,13 @@
-# 🧮 Modelo Lógico–Físico de Datos (Opcional)
+# Modelo Lógico–Físico de Datos (Opcional)
 
 En caso de implementarse una base de datos para almacenar los **componentes**, **ensamblajes** y **reportes** del sistema **3D PC Builder**, se propone el siguiente modelo lógico–físico, diseñado en **MySQL Workbench**.  
 Este modelo sigue la estructura definida en el **modelo conceptual de datos**, adaptándola al nivel físico mediante tipos de datos y claves relacionales.
 
 ---
 
-## 🗄️ Tablas propuestas
+## Tablas propuestas
 
-### 🧩 Tabla: `componentes`
+### Tabla: `componentes`
 | Campo | Tipo de dato | Descripción |
 |--------|---------------|-------------|
 | `id_componente` | INT (PK, AUTO_INCREMENT) | Identificador único del componente |
@@ -19,7 +19,7 @@ Este modelo sigue la estructura definida en el **modelo conceptual de datos**, a
 
 ---
 
-### ⚙️ Tabla: `ensamblajes`
+### Tabla: `ensamblajes`
 | Campo | Tipo de dato | Descripción |
 |--------|---------------|-------------|
 | `id_ensamblaje` | INT (PK, AUTO_INCREMENT) | Identificador único del ensamblaje |
@@ -29,7 +29,7 @@ Este modelo sigue la estructura definida en el **modelo conceptual de datos**, a
 
 ---
 
-### 👤 Tabla: `usuarios`
+### Tabla: `usuarios`
 | Campo | Tipo de dato | Descripción |
 |--------|---------------|-------------|
 | `id_usuario` | INT (PK, AUTO_INCREMENT) | Identificador único del usuario |
@@ -38,7 +38,7 @@ Este modelo sigue la estructura definida en el **modelo conceptual de datos**, a
 
 ---
 
-### 📦 Tabla intermedia: `ensamblaje_componentes`
+### Tabla intermedia: `ensamblaje_componentes`
 Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:N).  
 | Campo | Tipo de dato | Descripción |
 |--------|---------------|-------------|
@@ -48,7 +48,7 @@ Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:
 
 ---
 
-### 🧾 Tabla: `reportes`
+### Tabla: `reportes`
 | Campo | Tipo de dato | Descripción |
 |--------|---------------|-------------|
 | `id_reporte` | INT (PK, AUTO_INCREMENT) | Identificador único del reporte |
@@ -58,7 +58,7 @@ Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:
 
 ---
 
-## ⚡ Consideraciones físicas
+## Consideraciones físicas
 
 - **Motor de base de datos:** `InnoDB`  
   → Permite transacciones seguras y soporte de claves foráneas.  
@@ -69,7 +69,7 @@ Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:
 
 ---
 
-## 🚀 Ventajas del modelo
+## Ventajas del modelo
 
 - Permite futura expansión hacia una **aplicación web o multiplataforma** conectada a base de datos real.  
 - Facilita la **trazabilidad** entre configuraciones, usuarios y componentes.  
@@ -78,7 +78,7 @@ Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:
 
 ---
 
-## 🖼️ Instrucción para incluir el diagrama
+## Instrucción para incluir el diagrama
 
 > Incluir el **modelo físico de base de datos** exportado desde **MySQL Workbench** en formato `.png` o `.jpg` con resolución de **300 dpi**, asegurando que todas las entidades, relaciones y cardinalidades sean legibles.
 
