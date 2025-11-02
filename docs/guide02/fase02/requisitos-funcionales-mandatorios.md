@@ -1,11 +1,11 @@
-# ✅ Requisitos Funcionales Mandatorios
+# Requisitos Funcionales Mandatorios
 
 Los requisitos funcionales mandatorios definen las **funcionalidades esenciales que el sistema 3D PC Builder debe implementar obligatoriamente** para cumplir su propósito principal: permitir al usuario simular, visualizar y construir una computadora de manera virtual.  
 Sin el cumplimiento de estos requisitos, el software no podría considerarse funcional ni alineado a sus objetivos de diseño.
 
 ---
 
-## ⚙️ Lista de requisitos mandatorios
+## Lista de requisitos mandatorios
 
 1. **Visualización 3D interactiva de los componentes y del ensamblaje.**  
    El sistema debe permitir observar los modelos tridimensionales de cada pieza de hardware y su ubicación dentro del gabinete virtual.
