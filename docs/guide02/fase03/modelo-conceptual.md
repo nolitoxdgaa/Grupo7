@@ -49,7 +49,8 @@ Registra la información generada tras la creación o modificación de un ensamb
 
 - **Usuario — REALIZA → Ensamblaje:** un usuario puede realizar varios ensamblajes (1:N).  
 - **Ensamblaje — CONTIENE → Componente:** un ensamblaje contiene varios componentes (1:N).  
-- **Ensamblaje — GENERA → Reporte:** un ensamblaje genera un reporte (1:1).  
+- **Ensamblaje — GENERA → Reporte:** un ensamblaje genera un reporte (1:1).
+- **Compatibilidad entre componentes:** puede representarse mediante una relación N:N o mediante una entidad intermedia si se requiere más detalle.  
 
 ---
 
