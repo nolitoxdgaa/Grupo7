@@ -35,9 +35,11 @@ Fueron elaboradas en **Figma** y adaptadas posteriormente en Unity durante la im
 - Botones: “Cargar”, “Eliminar”, “Exportar PDF”.  
 - Permite reabrir proyectos anteriores fácilmente.
 
----
+<img width="1032" height="577" alt="497609067-ff733bd9-eafd-46ad-b5ba-c1093037c3ee" src="https://github.com/user-attachments/assets/9d73636b-8b85-4a89-850a-24d6801d4234" />
+<img width="1034" height="575" alt="497609146-085cbf12-877f-4879-9821-ea1e10f5a866" src="https://github.com/user-attachments/assets/1b869c79-1f9a-44e8-ae88-1773b2baa613" />
+<img width="1031" height="575" alt="497609277-cc34f8b9-0548-46b4-ad96-72c5bef83686" src="https://github.com/user-attachments/assets/dfc31f2d-de81-4f57-9575-23788bf4972b" />
 
-*(Insertar mockups o capturas en formato .png o .jpg, resolución mínima 300 dpi.)*
+---
 
 ## Consideraciones de diseño
 - Paleta de colores: tonos grises y azules con acentos naranjas para destacar acciones.  
