@@ -68,7 +68,6 @@ Este flujo garantiza una experiencia progresiva, educativa y fácil de comprende
 
 ---
 
-- Permite reabrir proyectos anteriores fácilmente.
 
 <img width="1032" height="577" alt="497609067-ff733bd9-eafd-46ad-b5ba-c1093037c3ee" src="https://github.com/user-attachments/assets/9d73636b-8b85-4a89-850a-24d6801d4234" />
 <img width="1034" height="575" alt="497609146-085cbf12-877f-4879-9821-ea1e10f5a866" src="https://github.com/user-attachments/assets/1b869c79-1f9a-44e8-ae88-1773b2baa613" />
