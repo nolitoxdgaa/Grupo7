@@ -51,17 +51,3 @@ Fin
 
 **Objetivo:** Permitir que el usuario almacene su progreso y pueda recuperar configuraciones anteriores.
 
----
-
-## Pseudocódigo 4 — Generación de Reporte Final
-```pseudocode
-Inicio
-    Crear documento PDF vacío
-    Agregar lista de componentes seleccionados con precios y compatibilidad
-    Calcular precio total
-    Guardar documento en carpeta /reportes/
-    Mostrar mensaje "Reporte generado con éxito"
-Fin
-```
-
-**Objetivo:** Generar un informe completo y exportable que resuma la configuración final del sistema con todos los detalles técnicos y económicos.
