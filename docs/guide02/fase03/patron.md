@@ -27,4 +27,5 @@ El patrón **MVC** fue seleccionado porque:
 
 ## Representación gráfica del patrón
 
-*(Insertar diagrama conceptual del patrón MVC implementado en Unity, con resolución 300 dpi.)*
+![Imagen de WhatsApp 2025-11-02 a las 04 45 42_d4c242f1](https://github.com/user-attachments/assets/f6daedee-7bb0-4824-ba02-bb583a5dab69)
+
