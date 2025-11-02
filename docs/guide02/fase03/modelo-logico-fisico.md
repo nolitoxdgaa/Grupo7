@@ -1,46 +1,85 @@
-## Modelo lógico-físico de datos (Opcional):
-# Modelo Lógico–Físico de Datos (Opcional)
+# 🧮 Modelo Lógico–Físico de Datos (Opcional)
 
-En caso de implementar una base de datos para almacenar los componentes y configuraciones, se propone el siguiente modelo lógico–físico desarrollado en **MySQL Workbench**.
+En caso de implementarse una base de datos para almacenar los **componentes**, **ensamblajes** y **reportes** del sistema **3D PC Builder**, se propone el siguiente modelo lógico–físico, diseñado en **MySQL Workbench**.  
+Este modelo sigue la estructura definida en el **modelo conceptual de datos**, adaptándola al nivel físico mediante tipos de datos y claves relacionales.
 
-## Tablas propuestas
+---
 
-### Tabla: componentes
+## 🗄️ Tablas propuestas
+
+### 🧩 Tabla: `componentes`
 | Campo | Tipo de dato | Descripción |
-|-------|---------------|--------------|
-| id_componente | INT (PK) | Identificador único del componente |
-| nombre | VARCHAR(100) | Nombre del componente |
-| tipo | VARCHAR(50) | Categoría (CPU, GPU, RAM, etc.) |
-| precio | DECIMAL(10,2) | Costo individual |
-| descripcion | TEXT | Detalle técnico |
-| imagen | VARCHAR(255) | Ruta del modelo 3D |
+|--------|---------------|-------------|
+| `id_componente` | INT (PK, AUTO_INCREMENT) | Identificador único del componente |
+| `nombre` | VARCHAR(100) | Nombre del componente |
+| `tipo` | VARCHAR(50) | Categoría (CPU, GPU, RAM, etc.) |
+| `precio` | DECIMAL(10,2) | Costo individual |
+| `descripcion` | TEXT | Detalle técnico del componente |
+| `imagen3d` | VARCHAR(255) | Ruta o referencia del modelo 3D |
 
-### Tabla: compatibilidades
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| id_compatibilidad | INT (PK) | Identificador |
-| componente_a | INT (FK) | ID del primer componente |
-| componente_b | INT (FK) | ID del segundo componente |
-| estado | BOOLEAN | 1 si son compatibles |
-| observacion | TEXT | Descripción de la regla |
+---
 
-### Tabla: configuraciones
-| Campo | Tipo | Descripción |
-|-------|------|-------------|
-| id_configuracion | INT (PK) | Identificador único |
-| usuario | VARCHAR(100) | Nombre del creador |
-| fecha | DATE | Fecha de creación |
-| precio_total | DECIMAL(10,2) | Costo total |
-| componentes | TEXT | Lista serializada de componentes |
+### ⚙️ Tabla: `ensamblajes`
+| Campo | Tipo de dato | Descripción |
+|--------|---------------|-------------|
+| `id_ensamblaje` | INT (PK, AUTO_INCREMENT) | Identificador único del ensamblaje |
+| `fecha` | DATE | Fecha de creación |
+| `estado` | VARCHAR(50) | Estado del ensamblaje (completo, en progreso, etc.) |
+| `id_usuario` | INT (FK) | Usuario que realizó el ensamblaje |
 
-## Consideraciones físicas
-- Motor de base de datos: **InnoDB**  
-- Claves foráneas con eliminación en cascada para mantener integridad referencial.  
-- Índices en campos de tipo y nombre para optimizar las búsquedas.  
+---
 
-## Ventajas
-- Permite la expansión futura hacia una aplicación conectada a base de datos real.  
-- Facilita la migración hacia un sistema web o multiplataforma.  
-- Mantiene trazabilidad entre configuraciones y componentes.
+### 👤 Tabla: `usuarios`
+| Campo | Tipo de dato | Descripción |
+|--------|---------------|-------------|
+| `id_usuario` | INT (PK, AUTO_INCREMENT) | Identificador único del usuario |
+| `nombre` | VARCHAR(100) | Nombre del usuario |
+| `correo` | VARCHAR(100) | Correo electrónico del usuario |
 
-*(Incluir imagen del modelo físico generado en MySQL Workbench, 300 dpi.)*
+---
+
+### 📦 Tabla intermedia: `ensamblaje_componentes`
+Relaciona los componentes incluidos en cada ensamblaje (resuelve la relación N:N).  
+| Campo | Tipo de dato | Descripción |
+|--------|---------------|-------------|
+| `id_ensamblaje` | INT (FK) | Identificador del ensamblaje |
+| `id_componente` | INT (FK) | Identificador del componente |
+| `cantidad` | INT | Cantidad o número de piezas utilizadas |
+
+---
+
+### 🧾 Tabla: `reportes`
+| Campo | Tipo de dato | Descripción |
+|--------|---------------|-------------|
+| `id_reporte` | INT (PK, AUTO_INCREMENT) | Identificador único del reporte |
+| `id_ensamblaje` | INT (FK) | Ensamblaje que genera el reporte |
+| `fecha` | DATE | Fecha de generación |
+| `detalle` | TEXT | Descripción o contenido del reporte |
+
+---
+
+## ⚡ Consideraciones físicas
+
+- **Motor de base de datos:** `InnoDB`  
+  → Permite transacciones seguras y soporte de claves foráneas.  
+- **Integridad referencial:**  
+  → Claves foráneas con eliminación en cascada (`ON DELETE CASCADE`) para mantener coherencia entre ensamblajes, usuarios y componentes.  
+- **Optimización de búsqueda:**  
+  → Índices en los campos `tipo` y `nombre` de la tabla `componentes` para acelerar consultas.  
+
+---
+
+## 🚀 Ventajas del modelo
+
+- Permite futura expansión hacia una **aplicación web o multiplataforma** conectada a base de datos real.  
+- Facilita la **trazabilidad** entre configuraciones, usuarios y componentes.  
+- Mantiene una **estructura normalizada** y coherente con el modelo conceptual.  
+- Simplifica la **migración** a sistemas basados en la nube o integrados con APIs RESTful.
+
+---
+
+## 🖼️ Instrucción para incluir el diagrama
+
+> Incluir el **modelo físico de base de datos** exportado desde **MySQL Workbench** en formato `.png` o `.jpg` con resolución de **300 dpi**, asegurando que todas las entidades, relaciones y cardinalidades sean legibles.
+
+
