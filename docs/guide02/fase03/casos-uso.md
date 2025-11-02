@@ -33,4 +33,5 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
   - No se permite guardar configuraciones con componentes incompatibles.  
   - El sistema debe validar la existencia de un componente esencial (placa base, procesador, fuente de poder) antes de finalizar el ensamblaje.
 
-*(Incluir diagrama UML de Casos de Uso en formato .png o .jpg con resolución de 300 dpi.)*
+![Imagen de WhatsApp 2025-11-02 a las 01 54 31_badb82a8](https://github.com/user-attachments/assets/6c552186-2872-4670-9908-150515ffc577)
+
