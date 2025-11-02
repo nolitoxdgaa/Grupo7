@@ -78,8 +78,6 @@ Este flujo garantiza una experiencia progresiva, educativa y fácil de comprende
 ## Consideraciones de diseño
 ---
 
-##  Consideraciones de Diseño
-
 - El diseño de las interfaces se basó en principios de **claridad, coherencia y usabilidad**.  
 - Se mantuvo una paleta de colores neutra y moderna, con botones visibles y tipografía legible para facilitar la navegación.  
 - Cada pantalla sigue una **estructura jerárquica** que guía al usuario desde la información teórica hasta la interacción práctica.  
