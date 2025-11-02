@@ -1,55 +1,66 @@
 # Modelo Conceptual de Datos
 
-El modelo conceptual de datos del sistema **3D PC Builder** define las entidades, atributos y relaciones que permiten almacenar la información sobre los componentes, configuraciones y reglas de compatibilidad.  
-El modelo sigue la notación **Entidad–Relación (E–R)** y mantiene coherencia con los casos de uso y procesos definidos.
+El **modelo conceptual de datos** del sistema **3D PC Builder** define las entidades, atributos y relaciones necesarias para representar la información de los componentes de hardware, los ensamblajes virtuales, los usuarios y los reportes generados dentro del entorno de simulación.  
+Este modelo fue diseñado bajo la notación **Entidad–Relación (E–R)** y mantiene coherencia con los procesos y casos de uso del sistema.
+
+---
 
 ## Entidades principales
 
-### 1. Componente
-Representa cada pieza de hardware disponible en el sistema.  
-**Atributos:**  
-- ID_Componente (PK)  
-- Nombre  
-- Tipo (CPU, GPU, RAM, etc.)  
-- Precio  
-- Descripción  
-- Imagen3D  
-- Fecha_Registro  
+### 1. Ensamblaje
+Representa una configuración o construcción virtual creada por el usuario.  
+**Atributos:**
+- `ID_Ensamblaje` (PK)
+- `Fecha`
+- `Estado`
 
-### 2. Compatibilidad
-Define las relaciones entre componentes y si pueden funcionar juntos.  
-**Atributos:**  
-- ID_Compatibilidad (PK)  
-- ID_ComponenteA (FK)  
-- ID_ComponenteB (FK)  
-- Estado (Compatible / Incompatible)  
-- Descripción  
+---
 
-### 3. Configuración
-Registra una construcción virtual creada por un usuario.  
-**Atributos:**  
-- ID_Configuración (PK)  
-- Nombre_Usuario  
-- Fecha_Creación  
-- Precio_Total  
-- Lista_Componentes (JSON o array)  
+### 2. Usuario
+Contiene la información del usuario que crea y gestiona los ensamblajes.  
+**Atributos:**
+- `ID_Usuario` (PK)
+- `Nombre`
+- `Correo`
 
-### 4. Usuario (opcional)
-Permite identificar a quien crea las configuraciones.  
-**Atributos:**  
-- ID_Usuario (PK)  
-- Nombre  
-- Correo  
-- Institución  
+---
+
+### 3. Componente
+Define cada pieza de hardware disponible (CPU, GPU, RAM, etc.).  
+**Atributos:**
+- `ID_Componente` (PK)
+- `Nombre`
+- `Tipo`
+- `Precio`
+- `Compatibilidad`
+
+---
+
+### 4. Reporte
+Registra la información generada tras la creación o modificación de un ensamblaje.  
+**Atributos:**
+- `ID_Reporte` (PK)
+- `Fecha`
+- `Detalle`
+
+---
 
 ## Relaciones entre entidades
-- Un **Componente** puede pertenecer a muchas **Configuraciones** (N:N).  
-- Una **Configuración** contiene varios **Componentes** (N:N).  
-- Una **Compatibilidad** relaciona dos **Componentes** específicos (1:1).  
-- Un **Usuario** puede crear muchas **Configuraciones** (1:N).
 
-## Justificación
-Este modelo conceptual permite representar la estructura de datos del sistema sin depender aún de un motor de base de datos.  
-El diseño se enfoca en garantizar la coherencia entre los elementos físicos (componentes) y sus propiedades lógicas (compatibilidad, precio, relación funcional).
+- **Usuario — REALIZA → Ensamblaje:** un usuario puede realizar varios ensamblajes (1:N).  
+- **Ensamblaje — CONTIENE → Componente:** un ensamblaje contiene varios componentes (1:N).  
+- **Ensamblaje — GENERA → Reporte:** un ensamblaje genera un reporte (1:1).  
 
-*(Incluir diagrama ER exportado en formato .png o .jpg con resolución de 300 dpi.)*
+---
+
+## Justificación del modelo
+
+El modelo conceptual propuesto permite estructurar de forma lógica la información clave del sistema, asegurando una adecuada representación de los **componentes físicos** (hardware) y sus **interacciones funcionales** (ensamblaje, compatibilidad, usuario, reporte).  
+Este diseño sirve como base para la implementación posterior del **modelo lógico y físico** en el motor de base de datos **MySQL**.
+
+---
+
+![Imagen de WhatsApp 2025-11-02 a las 02 05 22_2a7eb776](https://github.com/user-attachments/assets/7a077aef-998f-47f3-89a1-58e72444bd4f)
+
+
+
