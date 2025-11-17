@@ -17,10 +17,7 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
 4. **Calcular Precio Total**  
    Se suman los valores de cada componente y se muestra el costo final actualizado dinámicamente.
 
-5. **Guardar Configuración**  
-   El usuario puede almacenar su configuración actual para revisarla o modificarla más adelante.
-
-6. **Exportar Reporte (opcional)**  
+5. **Exportar Reporte (opcional)**  
    Permite exportar la lista de componentes y precios a un archivo PDF o CSV.
 
 ## Descripción de los elementos del diagrama
