@@ -4,6 +4,7 @@ A continuación se muestran fragmentos del código más relevante del sistema **
 El código sigue principios de orientación a objetos y estructura modular, priorizando la mantenibilidad y claridad.
 
 ---
+Eliminar ejemplo y colocar código de la carpeta scripts del otro repositorio
 
 ## Ejemplo 1: Carga dinámica de componentes
 ```csharp
