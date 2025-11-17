@@ -18,14 +18,14 @@
 | 2.4  | Especificación modelado 3D     | Documento de piezas mínimas (CPU, MB, RAM, GPU, PSU, Case)|
 
 ## 3. Implementación (MVP)
-### 3.1 Backend — Wilmer
+### 3.1 Backend 
 | ID   | Tarea                          | Entregable                          |
 |------|--------------------------------|-------------------------------------|
 | 3.1.1| Validación compatibilidad      | Módulo que valide componentes básicos |
 | 3.1.2| Sistema de mensajes y avisos   | Funciones de tips y errores          |
 | 3.2.3| Módulo de estimación de costos (rangos)        | Función para calcular costos basados en rangos locales  |
 
-### 3.2 Frontend (Unity/C#) — Josue
+### 3.2 Frontend (Unity/C#) 
 | ID   | Tarea                          | Entregable                          |
 |------|--------------------------------|-------------------------------------|
 | 3.2.1| Menú Principal                 | Escena con botones "Explorar" y "Armar PC" (solo Armar PC funcional) |
