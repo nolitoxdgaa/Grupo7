@@ -11,11 +11,7 @@ La elección de este patrón permite organizar el código en capas bien definida
 
 - **Vista (View):**  
   Responsable de la presentación visual y la interacción con el usuario.  
-  Se compone de las interfaces gráficas diseñadas en Unity y los modelos 3D creados en Blender, permitiendo que el usuario explore y manipule los componentes en tiempo real.
-
-- **Controlador (Controller):**  
-  Actúa como intermediario entre el modelo y la vista.  
-  Gestiona los eventos de usuario (por ejemplo, clics, arrastre o selección de componentes) y actualiza tanto la vista como los datos internos según las acciones realizadas.
+  Se compone de las interfaces gráficas diseñadas en Unity y los modelos 3D creados en Blender, permitiendo que el usuario explore los componentes en tiempo real
 
 ## Justificación del patrón
 
