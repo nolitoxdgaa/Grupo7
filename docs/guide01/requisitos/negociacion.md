@@ -9,7 +9,7 @@ Algunos usuarios señalaron que en el mercado ya existen simuladores similares. 
 ## Alcance realista del MVP
 
 Debido a la limitación de tiempo (3 meses), recursos (PCs personales y software libre) y la experiencia básica del equipo en herramientas como Unity y Python, se decidió reducir el alcance inicial y definir un Producto Mínimo Viable (MVP) con tres funcionalidades clave:  
-  1. Visualización en 3D interactivo de los componentes.  
+  1. Visualización en 3D de los componentes.  
   2. Vista rápida y detallada de información técnica.  
   3. Validación de compatibilidad entre componentes.  
 
