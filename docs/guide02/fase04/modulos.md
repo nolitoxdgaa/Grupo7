@@ -15,7 +15,6 @@ Cada módulo cumple una función específica dentro del flujo del sistema, y tod
 ## 2. Módulo de Ensamblaje Virtual
 - **Objetivo:** Permitir al usuario armar una PC simulando el proceso real de montaje.  
 - **Funciones:**
-  - Interfaz de arrastre (drag & drop) para colocar componentes en el gabinete.
   - Validación automática de compatibilidad.
   - Indicadores visuales (colores o mensajes) que guían al usuario.
 - **Interacción:** Directamente desde la cámara principal de Unity con eventos del mouse o teclado.
@@ -34,14 +33,7 @@ Cada módulo cumple una función específica dentro del flujo del sistema, y tod
   - Actualizar la interfaz automáticamente al agregar o eliminar un elemento.
   - Mostrar desglose por componente y total general.
 
-## 5. Módulo de Gestión de Configuraciones
-- **Objetivo:** Guardar, cargar y exportar configuraciones creadas por el usuario.  
-- **Funciones:**
-  - Almacenar la selección en un archivo JSON local.
-  - Permitir reabrir configuraciones previamente guardadas.
-  - Exportar la lista de componentes y precios a PDF o CSV (futuro).
-
-## 6. Módulo de Interfaz de Usuario (UI)
+## 56. Módulo de Interfaz de Usuario (UI)
 - **Objetivo:** Facilitar la navegación y comprensión de las funciones del sistema.  
 - **Características:**
   - Panel lateral con categorías de componentes.
