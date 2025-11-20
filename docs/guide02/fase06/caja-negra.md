@@ -9,7 +9,7 @@ Cada prueba se centró en la entrada y salida esperadas del sistema, comparando 
 
 ### Requisitos evaluados:
 - Visualización 3D de componentes.  
-- Ensamblaje interactivo.  
+- Autoensamblado 
 - Validación de compatibilidad.  
 - Cálculo de precios.  
 - Guardado de configuraciones.
@@ -25,7 +25,7 @@ Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de 
 | ID Prueba | Requisito Evaluado | Entrada | Resultado Esperado | Resultado Obtenido | Estado |
 |------------|--------------------|----------|--------------------|--------------------|---------|
 | P01 | RF-01 Visualización 3D | Cargar modelo GPU | Se muestra modelo correctamente | Se muestra correctamente | Aprobado |
-| P02 | RF-02 Ensamblaje | Arrastrar CPU al gabinete | CPU se fija en posición correcta | CPU colocado con éxito | Aprobado |
+| P02 | RF-02 Autoensamblaje | Componente se presenta en la pantalla | CPU se fija en posición correcta | CPU colocado con éxito | Aprobado |
 | P03 | RF-03 Compatibilidad | CPU AM5 + Placa AM4 | Mostrar alerta de incompatibilidad | Alerta visible | Aprobado |
 | P04 | RF-04 Precio Total | Agregar 3 componentes | Precio total actualizado | Valor correcto mostrado | Aprobado |
 | P05 | RF-05 Guardar Configuración | Presionar botón Guardar | Archivo JSON creado | Archivo generado correctamente | Aprobado |
