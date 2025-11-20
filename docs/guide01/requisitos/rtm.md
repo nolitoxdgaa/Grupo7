@@ -1,4 +1,4 @@
-# Especificación de Requisitos de Software (ERS)
+``# Especificación de Requisitos de Software (ERS)
 
 ---
 
@@ -10,12 +10,11 @@ Los requisitos funcionales se derivan de los objetivos del proyecto y definen la
 
 | ID  | Requisito Funcional           | Descripción |
 |-----|-------------------------------|-------------|
-| RF1 | Interacción con componentes   | El usuario podrá seleccionar, arrastrar y colocar piezas dentro del entorno 3D. |
-| RF2 | Ensamblaje de PC en 3D        | El sistema debe permitir al usuario ensamblar una computadora paso a paso. |
-| RF3 | Validación del ensamblaje     | El sistema debe validar si los componentes ensamblados son compatibles. |
-| RF4 | Retroalimentación al usuario  | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
-| RF5 | Generar reporte               | El sistema debe permitir generar un reporte con el detalle del ensamblaje realizado por el usuario. |
-| RF6 | Acceder a biblioteca          | El sistema debe permitir al usuario acceder a una biblioteca de componentes con información adicional. |
+| RF1 | Ensamblaje de PC en 3D        | El sistema debe ensamblar una computadora paso a paso. |
+| RF2 | Validación del ensamblaje     | El sistema debe validar si los componentes ensamblados son compatibles. |
+| RF3 | Retroalimentación al usuario  | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
+| RF4 | Generar reporte               | El sistema debe permitir generar un reporte con el detalle del ensamblaje realizado por el usuario. |
+| RF5 | Acceder a biblioteca          | El sistema debe permitir al usuario acceder a una biblioteca de componentes con información adicional. |
 
 ---
 
@@ -115,9 +114,8 @@ Los requisitos no funcionales definen criterios de calidad, limitaciones técnic
 ### 3. Observaciones Generales
 
 El MVP se enfocará únicamente en:
-- Ensamblar PC en 3D (RF2).
-- Validar compatibilidad (RF3).
-- Retroalimentación con errores/advertencias (RF4).
+- Validar compatibilidad (RF2).
+- Retroalimentación con errores/advertencias (RF3).
 
 Funcionalidades como guardar/cargar ensambles o explorar componentes sin ensamblar no se desarrollarán en esta primera fase.
 
