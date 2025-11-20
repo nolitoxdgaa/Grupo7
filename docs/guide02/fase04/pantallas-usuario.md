@@ -10,7 +10,6 @@ Las pantallas fueron desarrolladas en Unity y utilizan paneles 2D combinados con
 ## 2. Pantalla de Ensamblaje 3D
 - Vista central del gabinete y sus componentes.  
 - Panel lateral con categorías de hardware (CPU, GPU, RAM, etc.).  
-- Controles de cámara: rotación, zoom y desplazamiento.
 - Indicadores de compatibilidad (verde = compatible, rojo = incompatible).
 
 ## 3. Pantalla de Detalle de Componente
@@ -23,12 +22,6 @@ Las pantallas fueron desarrolladas en Unity y utilizan paneles 2D combinados con
 - Muestra la lista completa de componentes ensamblados.  
 - Precio total calculado.  
 - Botones “Guardar Configuración” y “Exportar”.
-
-## 5. Pantalla de Configuración Guardada
-- Permite visualizar y cargar configuraciones previas almacenadas en formato JSON.  
-- Incluye opción para renombrar, duplicar o eliminar configuraciones antiguas.
-
-*(Incluir las capturas de pantalla en formato .png o .jpg con resolución mínima de 300 dpi.)*
 
 ## Consideraciones de usabilidad
 - Los colores y botones fueron seleccionados para maximizar la legibilidad y la intuición del flujo.  
