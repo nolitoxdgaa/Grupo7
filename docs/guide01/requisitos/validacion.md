@@ -14,11 +14,11 @@ La validación de requisitos se ha realizado tomando en cuenta los objetivos del
 ## Restricciones de tiempo, costo y experiencia
 - El equipo cuenta con un plazo reducido de tres meses hasta la entrega en diciembre, lo cual condicionó la priorización de requisitos y la reducción del alcance a tres funciones principales en el MVP.  
 - Se dispone únicamente de recursos propios (PCs personales y software libre), sin acceso a licencias comerciales o infraestructura adicional, lo cual limitó la incorporación de funcionalidades avanzadas como actualización dinámica de precios mediante APIs externas.  
-- El equipo tiene un nivel básico en las herramientas seleccionadas (Unity, Python, librerías de soporte para 3D como Mediapipe). Esto se tomó en cuenta para definir un alcance realista y asegurar la viabilidad del proyecto dentro del tiempo disponible.
+- El equipo tiene un nivel básico en las herramientas seleccionadas (Unity, C#). Esto se tomó en cuenta para definir un alcance realista y asegurar la viabilidad del proyecto dentro del tiempo disponible.
 
 ## Correcta interpretación de los requisitos
 - A partir de las encuestas realizadas y de la discusión interna en el equipo, se constató que los requisitos fueron correctamente interpretados.  
-- La validación asegura que las funciones seleccionadas para el MVP responden a lo esperado por los usuarios (estudiantes que desean aprender a ensamblar computadoras) y que la aplicación mantendrá un balance entre simplicidad y utilidad.
+- La validación asegura que las funciones seleccionadas para el MVP responden a lo esperado por los usuarios y que la aplicación mantendrá un balance entre simplicidad y utilidad.
 
 ## Conclusión
 Los requisitos técnicos quedaron validados como factibles y alineados al propósito educativo del proyecto.  
