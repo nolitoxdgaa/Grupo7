@@ -20,11 +20,9 @@ Se agrupan los recursos de software según la etapa de desarrollo:
 
 - **Lenguajes de Programación**:  
   - C# (Unity y lógica de aplicación)  
-  - Python 3.11 (automatización, scripts, backend/API si es necesario)  
 
 - **Entornos de Desarrollo (IDE/Editor)**:  
   - Visual Studio (para C# y Unity)  
-  - Visual Studio Code (para Python)  
 
 - **Motor Gráfico y Modelado**:  
   - Unity (implementación y lógica del prototipo)  
@@ -32,9 +30,6 @@ Se agrupan los recursos de software según la etapa de desarrollo:
 
 - **Control de Versiones**:  
   - Git + GitHub (gestión de código, control de cambios y trabajo colaborativo)  
-
-- **Base de Datos**:  
-  - PostgreSQL 15 (base de datos libre, robusta y de alto rendimiento)  
 
 ---
 
