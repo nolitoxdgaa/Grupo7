@@ -9,7 +9,7 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
 
 1. **Visualización 3D interactiva de los componentes y del ensamblaje.**  
    El sistema debe permitir observar los modelos tridimensionales de cada pieza de hardware y su ubicación dentro del gabinete virtual.
-   Además, debe ofrecer interacción dinámica, permitiendo al usuario rotar, acercar o alejar la vista, así como manipular libremente los componentes dentro del entorno tridimensional.
+   Además, debe ofrecer un autoensamblado de los componentes por parte del programa
 
 2. **Visualización rápida y detallada de la información técnica.**  
    Cada componente debe mostrar su nombre, tipo, precio, descripción y especificaciones relevantes al seleccionarse.
