@@ -8,16 +8,13 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
 1. **Visualizar Componentes**  
    Permite al usuario examinar cada componente de hardware (CPU, GPU, etc.) con su información técnica.
 
-2. **Seleccionar y Ensamblar Componentes**  
-   El usuario elige los elementos deseados y los ubica en el gabinete 3D utilizando controles de arrastre.
-
-3. **Verificar Compatibilidad**  
+2. **Verificar Compatibilidad**  
    El sistema analiza las relaciones entre los componentes y genera mensajes visuales cuando se detectan incompatibilidades.
 
-4. **Calcular Precio Total**  
+3. **Calcular Precio Total**  
    Se suman los valores de cada componente y se muestra el costo final actualizado dinámicamente.
 
-5. **Exportar Reporte (opcional)**  
+4. **Exportar Reporte (opcional)**  
    Permite exportar la lista de componentes y precios a un archivo PDF o CSV.
 
 ## Descripción de los elementos del diagrama
