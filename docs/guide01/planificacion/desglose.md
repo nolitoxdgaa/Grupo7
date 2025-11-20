@@ -30,9 +30,7 @@
 |------|--------------------------------|-------------------------------------|
 | 3.2.1| Menú Principal                 | Escena con botones "Explorar" y "Armar PC" (solo Armar PC funcional) |
 | 3.2.2| Opción "Armar PC" — escena base| Vista dividida 3D (izq) + catálogo (der) | 
-| 3.2.3| Drag & Drop de componentes     | Función de arrastre y colocación     |
-| 3.2.4| Notificaciones UI              | Sistema visual de avisos y errores   |
-| 3.2.5| Integración con backend        | Flujo ensamblar ↔ validación         |
+| 3.2.3| Notificaciones UI              | Sistema visual de avisos y errores   |
 
 ### 3.3 Modelado 3D (Blender → Unity)
 | ID   | Tarea                          | Entregable                          |
@@ -60,7 +58,5 @@
 ## Hitos (Milestones)
 - **H1** — Requisitos y casos de uso del MVP completados  
 - **H2** — Diseño validado (mockups + arquitectura + modelos 3D mínimos)  
-- **H3** — Implementación del flujo “Armar PC” (drag & drop + validación + mensajes)  
-- **H4** — Pruebas internas y corrección de errores  
-- **H5** — Entrega MVP y presentación  
-
+- **H3** — Pruebas internas y corrección de errores
+- **H4** — Entrega MVP y presentación  
