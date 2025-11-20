@@ -62,7 +62,7 @@ La interfaz busca representar de manera clara cómo se integran los distintos co
 El recorrido del usuario dentro de **3D PC Builder** sigue una secuencia lógica e intuitiva:
 1. **Inicio (Menú Principal):** el usuario selecciona la acción que desea realizar.  
 2. **Consulta (Información de Componentes):** aprende sobre las partes que integran un computador.  
-3. **Simulación (Armado de PC):** ensambla visualmente su equipo y verifica compatibilidades.
+3. **Simulación (Armado de PC):** autoensamblado del equipo y verifica compatibilidades.
 
 Este flujo garantiza una experiencia progresiva, educativa y fácil de comprender, cumpliendo con los criterios de diseño, usabilidad y funcionalidad requeridos por el proyecto.
 
