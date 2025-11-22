@@ -11,11 +11,7 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
    El sistema debe permitir observar los modelos tridimensionales de cada pieza de hardware y su ubicación dentro del gabinete virtual.
    Además, debe ofrecer un autoensamblado de los componentes por parte del programa
 
-2. **Visualización rápida y detallada de la información técnica.**  
-   Cada componente debe mostrar su nombre, tipo, precio, descripción y especificaciones relevantes al seleccionarse.
-   La información debe desplegarse de manera inmediata y dinámica al interactuar con el componente.
-
-3. **Validación automática de compatibilidad entre componentes.**  
+2. **Validación automática de compatibilidad entre componentes.**  
    El sistema debe implementar un módulo de validación inteligente capaz de comprobar la compatibilidad entre los diferentes componentes del PC virtual.
    Esto incluye la coherencia eléctrica, física y lógica entre elementos como CPU–placa base, RAM–placa base, fuente de poder–GPU, almacenamiento–interfaz y las dimensiones dentro del gabinete.
 
