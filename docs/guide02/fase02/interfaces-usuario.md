@@ -69,9 +69,10 @@ Este flujo garantiza una experiencia progresiva, educativa y fácil de comprende
 ---
 
 
-<img width="1032" height="577" alt="497609067-ff733bd9-eafd-46ad-b5ba-c1093037c3ee" src="https://github.com/user-attachments/assets/9d73636b-8b85-4a89-850a-24d6801d4234" />
-<img width="1034" height="575" alt="497609146-085cbf12-877f-4879-9821-ea1e10f5a866" src="https://github.com/user-attachments/assets/1b869c79-1f9a-44e8-ae88-1773b2baa613" />
-<img width="1031" height="575" alt="497609277-cc34f8b9-0548-46b4-ad96-72c5bef83686" src="https://github.com/user-attachments/assets/dfc31f2d-de81-4f57-9575-23788bf4972b" />
+<img width="990" height="553" alt="image" src="https://github.com/user-attachments/assets/363ac723-f0be-4375-88de-2b57c32dd880" />
+<img width="985" height="547" alt="image" src="https://github.com/user-attachments/assets/9ede1924-7601-47ec-a91f-b75eb8359455" />
+<img width="981" height="556" alt="image" src="https://github.com/user-attachments/assets/0e1853e8-716a-47a8-8a72-0efd2669d3e4" />
+
 
 ---
 
