@@ -394,3 +394,297 @@ public static class ValidadorCompatibilidad
 }
 
 ```
+---
+## Visor3DManager: Encargado de manejar el cargado de modelos 3D al sistema
+```csharp
+using UnityEngine;
+using System.Collections.Generic;
+
+public class Visor3DManager : MonoBehaviour
+{
+    [Header("Contenedores individuales")]
+    public Transform contenedorCPU;
+    public Transform contenedorGPU;
+    public Transform contenedorRAM;
+    public Transform contenedorMotherboard;
+    public Transform contenedorPSU;
+    public Transform contenedorSSD;
+    public Transform contenedorCASE;
+
+    [Header("Contenedor para el modelo combinado")]
+    public Transform contenedorCombinado;
+
+    // Guarda wrappers individuales por tipo
+    private Dictionary<string, GameObject> wrappersPorTipo = new Dictionary<string, GameObject>();
+
+    // Wrapper único para el modelo combinado
+    private GameObject wrapperCombinado;
+
+    private Transform contenedorActual;
+    public float velocidadRotacion = 120f;
+
+    private Quaternion rotacionInicial;
+    private Vector3 posicionInicial;
+    private Vector3 escalaInicial;
+
+    private readonly string[] tiposOrden =
+    {
+        "CPU", "Motherboard", "RAM", "SSD", "Case", "PSU", "GPU"
+    };
+
+    private void Start()
+    {
+        ActualizarModelos();
+    }
+
+    private void Update()
+    {
+        ControlarRotacion();
+        ControlarReset();
+    }
+
+    // =======================================================
+    // FUNCIÓN PRINCIPAL: SE LLAMA SIEMPRE QUE CAMBIE LA BUILD
+    // =======================================================
+    public void ActualizarModelos()
+    {
+        Dictionary<string, ComponenteBase> buildDict = GameManager.Instancia.ObtenerBuildActual();
+        List<ComponenteBase> build = new List<ComponenteBase>(buildDict.Values);
+
+
+        if (build == null || build.Count == 0)
+        {
+            LimpiarTodo();
+            return;
+        }
+
+        if (build.Count == 1)
+        {
+            CargarModoIndividual(build[0]);
+        }
+        else
+        {
+            CargarModoCombinado(build);
+        }
+    }
+
+    // ============================
+    // MODO 1: SOLO UN COMPONENTE
+    // ============================
+    private void CargarModoIndividual(ComponenteBase comp)
+    {
+        LimpiarCombinado();
+
+        string tipo = comp.tipo;
+        string nombre = comp.nombre;
+
+        EliminarModelo(tipo);
+        CargarModeloIndividual(tipo, nombre);
+    }
+
+    // ============================
+    // MODO 2: MODELO COMBINADO
+    // ============================
+    private void CargarModoCombinado(List<ComponenteBase> build)
+    {
+        LimpiarIndividuales();
+
+        // Construir el nombre final en orden
+        List<string> nombres = new List<string>();
+
+        foreach (string tipo in tiposOrden)
+        {
+            ComponenteBase comp = build.Find(c => c.tipo == tipo);
+            if (comp != null)
+                nombres.Add(comp.nombre);
+        }
+
+        string nombreFinal = string.Join("_", nombres);
+        string ruta = $"Models/Combinados/{nombreFinal}";
+
+        // Cargar Resources
+        GameObject prefab = Resources.Load<GameObject>(ruta);
+
+        if (prefab == null)
+        {
+            Debug.LogError($"[Combinado] No se encontró el modelo combinado en: Resources/{ruta}.fbx");
+            return;
+        }
+
+        // Crear wrapper combinado
+        if (wrapperCombinado != null)
+            Destroy(wrapperCombinado);
+
+        wrapperCombinado = new GameObject("Wrapper_Combinado");
+        wrapperCombinado.transform.SetParent(contenedorCombinado, false);
+
+        GameObject modelo = Instantiate(prefab, wrapperCombinado.transform);
+        RecentrarModelo(modelo, wrapperCombinado);
+
+        contenedorActual = contenedorCombinado;
+        GuardarTransformInicial(contenedorActual);
+
+        Debug.Log($"[Combinado] Modelo cargado: {nombreFinal}");
+    }
+
+    // ============================
+    // CARGA INDIVIDUAL
+    // ============================
+    private void CargarModeloIndividual(string tipo, string nombre)
+    {
+        tipo = tipo.ToUpper();
+
+        Transform contenedor = ObtenerContenedor(tipo);
+
+        if (contenedor == null)
+        {
+            Debug.LogError($"No existe contenedor para tipo '{tipo}'");
+            return;
+        }
+
+        if (wrappersPorTipo.ContainsKey(tipo) && wrappersPorTipo[tipo] != null)
+            Destroy(wrappersPorTipo[tipo]);
+
+        string ruta = $"Models/{tipo}/{nombre}";
+        GameObject prefab = Resources.Load<GameObject>(ruta);
+
+        if (prefab == null)
+        {
+            Debug.LogError($"No se encontró el prefab: {ruta}");
+            return;
+        }
+
+        GameObject wrapper = new GameObject($"Wrapper_{tipo}");
+        wrapper.transform.SetParent(contenedor, false);
+        wrappersPorTipo[tipo] = wrapper;
+
+        GameObject modelo = Instantiate(prefab, wrapper.transform);
+        RecentrarModelo(modelo, wrapper);
+
+        contenedorActual = contenedor.transform;
+        GuardarTransformInicial(contenedorActual);
+    }
+
+    private Transform ObtenerContenedor(string tipo)
+    {
+        return tipo switch
+        {
+            "CPU" => contenedorCPU,
+            "GPU" => contenedorGPU,
+            "RAM" => contenedorRAM,
+            "MOTHERBOARD" => contenedorMotherboard,
+            "PSU" => contenedorPSU,
+            "SSD" => contenedorSSD,
+            "CASE" => contenedorCASE,
+            _ => null
+        };
+    }
+
+    // ============================
+    // LIMPIEZA
+    // ============================
+    public void EliminarModelo(string tipo)
+    {
+        tipo = tipo.ToUpper();
+        if (wrappersPorTipo.ContainsKey(tipo) && wrappersPorTipo[tipo] != null)
+        {
+            Destroy(wrappersPorTipo[tipo]);
+            wrappersPorTipo[tipo] = null;
+        }
+    }
+
+    private void LimpiarIndividuales()
+    {
+        foreach (var key in wrappersPorTipo.Keys)
+        {
+            if (wrappersPorTipo[key] != null)
+                Destroy(wrappersPorTipo[key]);
+        }
+        wrappersPorTipo.Clear();
+    }
+
+    private void LimpiarCombinado()
+    {
+        if (wrapperCombinado != null)
+        {
+            Destroy(wrapperCombinado);
+            wrapperCombinado = null;
+        }
+    }
+
+    private void LimpiarTodo()
+    {
+        LimpiarIndividuales();
+        LimpiarCombinado();
+    }
+
+    // ============================
+    // RECENTRAR
+    // ============================
+    private void RecentrarModelo(GameObject modelo, GameObject wrapper)
+    {
+        Renderer[] renderers = modelo.GetComponentsInChildren<Renderer>();
+        if (renderers.Length == 0)
+            return;
+
+        Bounds bounds = renderers[0].bounds;
+        foreach (var r in renderers)
+            bounds.Encapsulate(r.bounds);
+
+        Vector3 offset = bounds.center - wrapper.transform.position;
+        modelo.transform.position -= offset;
+        modelo.transform.localRotation = Quaternion.identity;
+        modelo.transform.localScale = Vector3.one * 2f;
+    }
+
+    private void ControlarRotacion()
+    {
+        if (contenedorActual == null)
+            return;
+
+        float rotY = 0f;
+        float rotX = 0f;
+
+        if (Input.GetKey(KeyCode.LeftArrow))
+            rotY = -1f;
+        else if (Input.GetKey(KeyCode.RightArrow))
+            rotY = 1f;
+
+        if (Input.GetKey(KeyCode.UpArrow))
+            rotX = -1f;
+        else if (Input.GetKey(KeyCode.DownArrow))
+            rotX = 1f;
+
+        if (rotX != 0 || rotY != 0)
+        {
+            contenedorActual.Rotate(
+                rotX * velocidadRotacion * Time.deltaTime,
+                rotY * velocidadRotacion * Time.deltaTime,
+                0f,
+                Space.World
+            );
+        }
+    }
+
+    private void ControlarReset()
+    {
+        if (contenedorActual == null)
+            return;
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            contenedorActual.localRotation = rotacionInicial;
+            contenedorActual.localPosition = posicionInicial;
+            contenedorActual.localScale = escalaInicial;
+        }
+    }
+    private void GuardarTransformInicial(Transform t)
+    {
+        rotacionInicial = t.localRotation;
+        posicionInicial = t.localPosition;
+        escalaInicial = t.localScale;
+    }
+
+}
+
+```
