@@ -13,11 +13,18 @@ Cada módulo cumple una función específica dentro del flujo del sistema, y tod
 - **Salidas:** Objetos 3D interactivos visibles en el entorno virtual.
 
 ## 2. Módulo de Ensamblaje Virtual
-- **Objetivo:** Permitir al usuario armar una PC simulando el proceso real de montaje.  
+- **Objetivo:** Permitir al usuario visualizar la PC armada de manera automática según los componentes que seleccione.
+- **Descripción ajustada:**  
+  A diferencia de un ensamblaje físico paso a paso, el prototipo genera una visualización dinámica que cambia dependiendo de la configuración actual del usuario.
+
 - **Funciones:**
-  - Validación automática de compatibilidad.
-  - Indicadores visuales (colores o mensajes) que guían al usuario.
-- **Interacción:** Directamente desde la cámara principal de Unity con eventos del mouse o teclado.
+  - Mostrar modelos 3D individuales cuando sólo se selecciona un componente.
+  - Mostrar un modelo 3D combinado cuando la selección contiene múltiples componentes compatibles.
+  - Sincronizar la vista 3D con los cambios realizados en la lista de componentes del usuario.
+  - Permitir manipulación visual (rotación con teclas direccionales y reinicio con tecla R).
+
+- **Interacción:**  
+  El usuario observa la PC en el visor 3D y controla la rotación del modelo mediante el teclado.
 
 ## 3. Módulo de Compatibilidad y Validación
 - **Objetivo:** Comprobar que los componentes seleccionados funcionen entre sí.  
