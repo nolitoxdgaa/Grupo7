@@ -11,7 +11,7 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
    El sistema debe permitir el ensamblaje de una computadora en 3D de forma guiada, mostrando cómo se van agregando los componentes dentro del gabinete virtual en una secuencia lógica.
    
 2. **Validación automática de compatibilidad entre componentes.**
-3. El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual. Esto incluye, entre otros aspectos: - Compatibilidad CPU – placa base. - Compatibilidad RAM – placa base. - Relación entre consumo total de energía y capacidad de la fuente de poder. - Compatibilidad de almacenamiento con la interfaz disponible.
+   El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual. Esto incluye, entre otros aspectos: - Compatibilidad CPU – placa base. - Compatibilidad RAM – placa base. - Relación entre consumo total de energía y capacidad de la fuente de poder. - Compatibilidad de almacenamiento con la interfaz disponible.
 
 4. **Validación automática de compatibilidad entre componentes.**  
    El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual.  
