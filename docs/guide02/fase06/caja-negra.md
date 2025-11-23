@@ -8,10 +8,11 @@ Cada prueba se centró en la entrada y salida esperadas del sistema, comparando 
 ## Plan de pruebas
 
 ### Requisitos evaluados:
-- Ensamblaje y vision 3D de este paso a paso
-- Validacion de compatibilidad automatica
-- Notificacion de errores, advertencias y tipos de seguridad
-- Mostrar alertas 
+- Ensamblaje de PC en 3D paso a paso.
+- Validación automática de compatibilidad entre componentes.
+- Notificación de errores, advertencias y tips de seguridad.
+- Generación de reporte del ensamblaje.
+- Acceso a una biblioteca de componentes.
 ### Metodología:
 Se definieron casos de prueba representativos que cubren los flujos principales y alternativos del sistema.  
 Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de pantalla y bitácoras de ejecución.
