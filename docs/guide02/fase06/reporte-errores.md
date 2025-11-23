@@ -12,7 +12,7 @@ Durante el proceso de validación se registraron defectos menores que fueron cor
 | E02 | Al momento de seleccionar un componente, su modelo 3D no se muestra en pantalla | Seleccionar el tipo de componente y dentro de la escena "Selector componentes", seleccionar cualquiera de estos | 12/11/2025 | Josue Cordoba | Corregido | Josue Cordoba | Alta |
 | E03 | A pesar de seleccionar dos componentes incompatibles, los modelos se generaban dentro del apartado visual | Seleccionar dos componenetes incompatibles como: "Procesador con socket LGA700" y "Motherboard con socket AM4" | 15/11/2025 | Josue Cordoba | Corregido | Josue Cordoba | Alta |
 |E04| No se encontró conección del script para la biblioteca de componentes | Se creo un apartado nuevo de Script solo para la bibliteca | 19/11/2025 | Wilmer Sanchez  | Corregido | Wilmer Sanchez | Media |  
-|E05| No se genera el reporte en archivvo ".txt" | Ingresar a la escena "SetUp" despues de culminar el ensamblaje y presionar la tecla "p" | 20/11/2025 | Josue Cordoba | En proceso | Josue Cordoba | Media |  
+|E05| Al eliminar un componente de los seleccionados cuando ya estan combinados, no se actualiza el modelo 3D | Eliminar cualquier componente seleccionado dentro de un conjunto de 2 o mas componentes| 22/11/2025 | Josue Cordoba | En proceso | Josue Cordoba | Alta |  
 ---
 
 ## Análisis de resultados
