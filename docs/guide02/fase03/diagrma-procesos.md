@@ -27,4 +27,11 @@ Representar de forma visual la interacción entre los procesos humanos (usuario)
 <img width="1618" height="659" alt="image" src="https://github.com/user-attachments/assets/0e87fdcf-aae3-417f-ad0f-e54692f6373d" />
 
 ---
-## 2.RM-02
+## 3.RM-03
+
+<img width="1273" height="709" alt="image" src="https://github.com/user-attachments/assets/57b48fa4-d26e-438b-bd78-8d0718f5eaeb" />
+
+---
+## 4. RM-04
+
+
