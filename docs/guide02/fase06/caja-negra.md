@@ -27,7 +27,7 @@ Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de 
 | P02 | RF-02 Validación del ensamblaje | Varios componentes seleccionados | Varios componentes compatibles ensamblados  | Componentes ensamblados con exito |Anexo 2| Aprobado |
 | P03 | RF-03 Notificación de errores, advertencias y tips de seguridad. | CPU Socket LGA1700 - Mtoherboard socket LG1150 | Mostrar alerta de incompatibilidad | Alerta visible |Anexo3| Aprobado |
 | P04 | RF-03 Notificación de errores, advertencias y tips de seguridad. | Ingresar al Simulador de ensamblaje | Mostrar tips de seguridad aleatorios | Tips de seguridad visibles |Anexo4| Aprobado |
-| P05| RF-04 Generar reporte | Presionar la tecla "P" dentro del apartado de Setup para generar un reporte | txt generado correctametne | Archivo encontrao en ruta|anexo 5| Aprobado |
+| P05| RF-04 Generar reporte | Presionar la tecla "P" dentro del apartado de Setup para generar un reporte | txt generado correctametne | Archivo encontrado en ruta|anexo 5| Aprobado |
 | P06 | RF-05 Acceder a biblioteca | Seleccionar Biblioteca en Menu | Cargar informacion general de componentes | Informacion cargada correctamente |Anexo6| Aprobado |
 
 ---
