@@ -15,16 +15,8 @@ La elección de este patrón permite organizar el código en capas bien definida
   
 - **Controlador (Controller):**  
   Administra los eventos del usuario y coordina la comunicación entre la Vista y el Modelo.  
-  En el contexto de **3D PC Builder**, el controlador está implementado principalmente mediante scripts en C# (por ejemplo, gestores de escenas, controladores de interfaz y lógica de ensamblaje), y se encarga de:
-  - Capturar las acciones del usuario en la interfaz (clics en botones, selección de componentes, solicitud de reporte, etc.).
-  - Actualizar el Modelo cuando el usuario agrega, cambia o elimina componentes del ensamblaje.
-  - Invocar la lógica de validación de compatibilidad y procesar sus resultados.
-  - Ordenar a la Vista que muestre o actualice:
-    - La representación 3D del ensamblaje.
-    - Los mensajes de error, advertencias y tips de seguridad.
-    - La información de la biblioteca de componentes.
-    - El reporte generado del ensamblaje.
-
+  Está implementado principalmente mediante scripts en C#, y se encarga de capturar las acciones del usuario en la interfaz y actualizar el Modelo
+    
 ## Justificación del patrón
 
 El patrón **MVC** fue seleccionado porque:
