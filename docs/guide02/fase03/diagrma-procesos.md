@@ -18,7 +18,9 @@ Fue elaborado utilizando **Bizagi Modeler**, aplicando notación **BPMN**.
 Representar de forma visual la interacción entre los procesos humanos (usuario) y automatizados (sistema), destacando las decisiones de compatibilidad y los cálculos dinámicos de precio.
 
 ---
-1. <img width="1221" height="541" alt="image" src="https://github.com/user-attachments/assets/d9d1f962-00c1-4347-99ea-5cc48072096f" />
+1.
+   <img width="1221" height="541" alt="image" src="https://github.com/user-attachments/assets/d9d1f962-00c1-4347-99ea-5cc48072096f" />
 
 
+  
 2. <img width="1618" height="659" alt="image" src="https://github.com/user-attachments/assets/0e87fdcf-aae3-417f-ad0f-e54692f6373d" />
