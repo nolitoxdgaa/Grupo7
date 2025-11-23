@@ -1,24 +1,45 @@
 # Requisitos No Funcionales
 
 Los **requisitos no funcionales** definen los **criterios de calidad, las limitaciones técnicas y las condiciones de uso** bajo las cuales debe operar el sistema **3D PC Builder**.  
-Estos requisitos no describen funciones específicas del software, sino las **características de desempeño, compatibilidad y mantenimiento** que garantizan su correcto funcionamiento y experiencia de usuario.
+No describen funciones específicas, sino las **características de desempeño, compatibilidad, mantenimiento y entorno de ejecución**.
 
 ---
 
 ## Lista de requisitos no funcionales
 
 1. **Portabilidad.**  
-   El sistema debe ejecutarse en equipos portátiles o de escritorio con **Windows 10 o superior**, que cuenten con una **GPU dedicada** (RTX 3060 o equivalente) para garantizar el rendimiento adecuado de la simulación 3D.
+   El sistema debe ejecutarse en equipos portátiles o de escritorio con:
+   - **Sistema operativo:** Windows 10 o superior.  
+   - **GPU dedicada de gama media** (por ejemplo, RTX 3060 o similar) para garantizar un rendimiento adecuado en la visualización 3D.
 
 2. **Mantenibilidad.**  
-   El código fuente debe estar estructurado de forma **modular**, empleando los lenguajes **C# (Unity)** y **Python**, con control de versiones mediante **GitHub** y documentación técnica detallada en el archivo **README.md**.
+   El código debe estar estructurado de forma **modular**, utilizando:
+   - **C# (Unity)** como lenguaje principal de la aplicación.  
+   - **Python** para herramientas auxiliares o scripts cuando sea necesario.  
+   - Control de versiones mediante **GitHub**.  
+   Además, debe mantenerse **documentación técnica básica** en un archivo **README.md**, incluyendo instrucciones de instalación y ejecución.
 
 3. **Usabilidad.**  
-   La interfaz gráfica debe ser **intuitiva y accesible**, orientada a usuarios principiantes, con mensajes de error claros, instrucciones breves y una navegación coherente entre pantallas.
+   La interfaz gráfica debe ser:
+   - **Intuitiva y accesible** para usuarios principiantes.  
+   - Acompañada de **mensajes de error claros** y comprensibles.  
+   - Coherente en su navegación entre las distintas pantallas del sistema.
 
-4. **Velocidad de procesamiento.**  
-   La aplicación debe mantener una **tasa mínima de 30 cuadros por segundo (FPS)** durante la visualización y ensamblaje 3D, asegurando una experiencia fluida y estable.
+4. **Velocidad de procesamiento y rendimiento visual.**  
+   La aplicación debe mantener una **tasa mínima de 30 FPS** durante la visualización y el proceso de ensamblaje en 3D, asegurando:
+   - Fluidez en la experiencia del usuario.  
+   - Ausencia de caídas bruscas de rendimiento en equipos que cumplan las especificaciones mínimas.
 
 5. **Restricciones técnicas.**  
-   El desarrollo debe limitarse al uso de **herramientas y librerías de libre acceso**, como **Unity (C#)**, **Blender** y **Python**, ejecutándose exclusivamente en sistemas **Windows 10 o superior**.  
-   En la versión **MVP** (Producto Mínimo Viable) no se considerará la integración con servicios o sistemas externos.
+   El desarrollo del sistema estará limitado a herramientas y tecnologías de **libre acceso**, tales como:
+   - **Unity (C#)** para la aplicación principal.  
+   - **Blender** para la creación o edición de modelos 3D.  
+   - **Python** para automatización o scripts de soporte.  
+   Asimismo:
+   - La plataforma objetivo es **Windows 10 o superior**.  
+   - En el **MVP** no habrá integración con sistemas ni servicios externos (APIs de terceros u otros).
+
+6. **Dependencia de red y modo de operación.**  
+   El sistema debe poder ejecutarse **sin requerir conexión activa a Internet** para sus funcionalidades principales, de manera que:
+   - Todo el proceso de ensamblaje, validación y generación de reporte funcione de forma **local**.  
+   - La experiencia del usuario no dependa de la disponibilidad de red.
