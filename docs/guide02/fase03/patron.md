@@ -12,6 +12,18 @@ La elección de este patrón permite organizar el código en capas bien definida
 - **Vista (View):**  
   Responsable de la presentación visual y la interacción con el usuario.  
   Se compone de las interfaces gráficas diseñadas en Unity y los modelos 3D creados en Blender, permitiendo que el usuario explore los componentes en tiempo real
+  
+- **Controlador (Controller):**  
+  Administra los eventos del usuario y coordina la comunicación entre la Vista y el Modelo.  
+  En el contexto de **3D PC Builder**, el controlador está implementado principalmente mediante scripts en C# (por ejemplo, gestores de escenas, controladores de interfaz y lógica de ensamblaje), y se encarga de:
+  - Capturar las acciones del usuario en la interfaz (clics en botones, selección de componentes, solicitud de reporte, etc.).
+  - Actualizar el Modelo cuando el usuario agrega, cambia o elimina componentes del ensamblaje.
+  - Invocar la lógica de validación de compatibilidad y procesar sus resultados.
+  - Ordenar a la Vista que muestre o actualice:
+    - La representación 3D del ensamblaje.
+    - Los mensajes de error, advertencias y tips de seguridad.
+    - La información de la biblioteca de componentes.
+    - El reporte generado del ensamblaje.
 
 ## Justificación del patrón
 
