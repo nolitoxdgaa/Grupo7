@@ -86,11 +86,12 @@ método mostrarError(mensaje):
 
 ### 1.5 Interfaz de Usuario (GUI)
 
-<img width="1032" height="577" alt="image" src="https://github.com/user-attachments/assets/ff733bd9-eafd-46ad-b5ba-c1093037c3ee" />
+<img width="1013" height="569" alt="image" src="https://github.com/user-attachments/assets/2e0d7dea-cb08-45e1-978a-e1bd4787e8b1" />
 
-<img width="1034" height="575" alt="image" src="https://github.com/user-attachments/assets/085cbf12-877f-4879-9821-ea1e10f5a866" />
+<img width="1016" height="571" alt="image" src="https://github.com/user-attachments/assets/75a97ac1-781a-4210-9804-98f70ae1b1d5" />
 
-<img width="1031" height="575" alt="image" src="https://github.com/user-attachments/assets/cc34f8b9-0548-46b4-ad96-72c5bef83686" />
+<img width="1017" height="573" alt="image" src="https://github.com/user-attachments/assets/276c4303-f498-40df-94d7-9b543f868442" />
+
 
 
 
