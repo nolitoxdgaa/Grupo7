@@ -35,6 +35,8 @@ Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de 
 
 ## Conclusiones de las pruebas
 
+Las pruebas de caja negra confirmaron que las funcionalidades principales del simulador operan correctamente. El ensamblaje 3D, la validación de compatibilidad, las notificaciones y la generación del reporte funcionaron según lo esperado en todos los casos evaluados. No se detectaron fallas críticas y los resultados obtenidos coincidieron plenamente con los previstos. En general, el sistema mostró estabilidad y cumple adecuadamente con los requisitos funcionales establecidos.
+
 ---
 
 ## Anexos:
