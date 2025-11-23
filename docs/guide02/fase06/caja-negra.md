@@ -8,12 +8,10 @@ Cada prueba se centró en la entrada y salida esperadas del sistema, comparando 
 ## Plan de pruebas
 
 ### Requisitos evaluados:
-- Visualización 3D de componentes.  
-- Autoensamblado 
-- Validación de compatibilidad.  
-- Cálculo de precios.  
-- Guardado de configuraciones.
-
+- Ensamblaje y vision 3D de este paso a paso
+- Validacion de compatibilidad automatica
+- Notificacion de errores, advertencias y tipos de seguridad
+- Mostrar alertas 
 ### Metodología:
 Se definieron casos de prueba representativos que cubren los flujos principales y alternativos del sistema.  
 Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de pantalla y bitácoras de ejecución.
