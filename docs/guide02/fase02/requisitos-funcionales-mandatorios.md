@@ -10,6 +10,9 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
 1. **Ensamblaje de PC en 3D paso a paso.**  
    El sistema debe permitir el ensamblaje de una computadora en 3D de forma guiada, mostrando cómo se van agregando los componentes dentro del gabinete virtual en una secuencia lógica.
    
+   <img width="1221" height="541" alt="image" src="https://github.com/user-attachments/assets/c4795998-1572-4099-bcdc-be85089cfb51" />
+
+   
 2. **Validación automática de compatibilidad entre componentes.**  
    El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual.  
    Esto incluye, entre otros aspectos:
