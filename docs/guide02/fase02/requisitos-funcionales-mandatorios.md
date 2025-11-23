@@ -7,27 +7,31 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
 
 ## Lista de requisitos mandatorios
 
-1. **Visualización 3D interactiva de los componentes y del ensamblaje.**  
-   El sistema debe permitir observar los modelos tridimensionales de cada pieza de hardware y su ubicación dentro del gabinete virtual.
-   Además, debe ofrecer un autoensamblado de los componentes por parte del programa
+1. **Ensamblaje de PC en 3D paso a paso.**  
+   El sistema debe permitir el **ensamblaje de una computadora en 3D de forma guiada**, mostrando cómo se van agregando los componentes dentro del gabinete virtual en una secuencia lógica (corresponde a **RF1** del RTM).
 
 2. **Validación automática de compatibilidad entre componentes.**  
-   El sistema debe implementar un módulo de validación inteligente capaz de comprobar la compatibilidad entre los diferentes componentes del PC virtual.
-   Esto incluye la coherencia eléctrica, física y lógica entre elementos como CPU–placa base, RAM–placa base, fuente de poder–GPU, almacenamiento–interfaz y las dimensiones dentro del gabinete.
+   El sistema debe implementar un módulo de **validación de compatibilidad** que compruebe las relaciones entre los diferentes componentes del PC virtual (corresponde a **RF2** del RTM).  
+   Esto incluye, entre otros aspectos:
+   - Compatibilidad CPU – placa base.  
+   - Compatibilidad RAM – placa base.  
+   - Relación entre consumo total de energía y capacidad de la fuente de poder.  
+   - Compatibilidad de almacenamiento con la interfaz disponible.  
 
-4. **Notificación de errores o incompatibilidades.**  
-   Cuando se detecte una incompatibilidad, el sistema debe mostrar alertas visuales o mensajes emergentes claros, indicando el tipo de conflicto y sugerencias de corrección para guiar al usuario en la selección adecuada.
+3. **Notificación de errores, advertencias y tips de seguridad.**  
+   Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
+   - Mostrar **alertas visuales o mensajes emergentes claros** indicando el tipo de conflicto.  
+   - Proporcionar **sugerencias de corrección** para guiar al usuario.  
+   - Incluir **tips o recomendaciones de seguridad** sobre buenas prácticas de ensamblaje (corresponde a **RF3** del RTM).
 
-5. **Incorporación de tips o alertas de seguridad.**  
-   Durante el proceso de ensamblaje, el sistema debe mostrar recomendaciones de buenas prácticas para evitar configuraciones incorrectas o malas prácticas de armado.
-   Estas alertas deben contribuir a educar al usuario sobre el proceso de montaje seguro y correcto de los componentes.
-   
-6. **Ejecución en entorno de PC (plataforma principal).**  
-   Su arquitectura debe permitir una instalación local completa, sin depender de servicios externos, y ser compatible con hardware estándar de desarrollo.
+4. **Generación de reporte del ensamblaje.**  
+   El sistema debe permitir **generar un reporte** con el detalle del ensamblaje realizado por el usuario (corresponde a **RF4** del RTM), incluyendo como mínimo:
+   - Lista de componentes seleccionados.  
+   - Resultado de la validación de compatibilidad.  
+   - Observaciones o advertencias relevantes.
 
-7. **Operación sin conexión a Internet.**  
-   El sistema debe poder ejecutarse localmente, sin requerir conexión activa a la red.
-
-8. **Rendimiento fluido en equipos de gama media.**  
-   La aplicación debe ofrecer una experiencia 3D fluida y estable, con un promedio mínimo de 40 a 60 FPS al renderizar los modelos y animaciones.
-   Debe estar optimizada en la carga de recursos gráficos, minimizando tiempos de espera y evitando caídas notorias de rendimiento en equipos de gama media con GPU integrada o dedicada de nivel básico.
+5. **Acceso a una biblioteca de componentes.**  
+   El sistema debe proporcionar acceso a una **biblioteca de componentes** donde el usuario pueda consultar información técnica básica de cada pieza de hardware disponible (corresponde a **RF5** del RTM), como:
+   - Nombre del componente.  
+   - Tipo (CPU, GPU, RAM, etc.).  
+   - Especificaciones clave (capacidad, frecuencia, TDP, socket, etc.).
