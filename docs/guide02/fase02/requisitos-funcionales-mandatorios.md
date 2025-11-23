@@ -18,24 +18,19 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
    - Relación entre consumo total de energía y capacidad de la fuente de poder.  
    - Compatibilidad de almacenamiento con la interfaz disponible.
   
-3. **Notificación de errores, advertencias y tips de seguridad.** Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
-   - Mostrar alertas visuales o mensajes emergentes claros indicando el tipo de conflicto.
-   - Proporcionar sugerencias de corrección para guiar al usuario.
-   - Incluir tips o recomendaciones de seguridad sobre buenas prácticas de ensamblaje 
-
-5. **Notificación de errores, advertencias y tips de seguridad.**  
+3. **Notificación de errores, advertencias y tips de seguridad.**  
    Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
    - Mostrar alertas visuales o mensajes emergentes claros indicando el tipo de conflicto.  
    - Proporcionar sugerencias de corrección para guiar al usuario.  
    - Incluir tips o recomendaciones de seguridad sobre buenas prácticas de ensamblaje.
 
-6. **Generación de reporte del ensamblaje.**  
+4. **Generación de reporte del ensamblaje.**  
    El sistema debe permitir generar un reporte con el detalle del ensamblaje realizado por el usuario, incluyendo como mínimo:
    - Lista de componentes seleccionados.  
    - Resultado de la validación de compatibilidad.  
    - Observaciones o advertencias relevantes.
 
-7. **Acceso a una biblioteca de componentes.**  
+5. **Acceso a una biblioteca de componentes.**  
    El sistema debe proporcionar acceso a una biblioteca de componentes donde el usuario pueda consultar información técnica básica de cada pieza de hardware disponible, como:
    - Nombre del componente.  
    - Tipo (CPU, GPU, RAM, etc.).  
