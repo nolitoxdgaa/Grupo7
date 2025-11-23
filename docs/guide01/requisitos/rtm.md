@@ -12,7 +12,7 @@ Los requisitos funcionales se derivan de los objetivos del proyecto y definen la
 |-----|-------------------------------|-------------|
 | RF1 | Ensamblaje de PC en 3D        | El sistema debe ensamblar una computadora paso a paso. |
 | RF2 | Validación del ensamblaje     | El sistema debe validar si los componentes ensamblados son compatibles. |
-| RF3 | Retroalimentación al usuario  | El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
+| RF3 | Notificación de errores, advertencias y tips de seguridad.| El sistema debe mostrar advertencias y mensajes de error en caso de incompatibilidades. |
 | RF4 | Generar reporte               | El sistema debe permitir generar un reporte con el detalle del ensamblaje realizado por el usuario. |
 | RF5 | Acceder a biblioteca          | El sistema debe permitir al usuario acceder a una biblioteca de componentes con información adicional. |
 
