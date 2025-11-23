@@ -21,23 +21,16 @@ Cada caso se ejecutó en Unity, registrando los resultados mediante capturas de 
 
 ## Matriz de trazabilidad de pruebas de caja negra
 
-| ID Prueba | Requisito Evaluado | Entrada | Resultado Esperado | Resultado Obtenido | Estado |
-|------------|--------------------|----------|--------------------|--------------------|---------|
-| P01 | RF-01 Visualización 3D | Cargar modelo GPU | Se muestra modelo correctamente | Se muestra correctamente | Aprobado |
-| P02 | RF-02 Autoensamblaje | Componente se presenta en la pantalla | CPU se fija en posición correcta | CPU colocado con éxito | Aprobado |
-| P03 | RF-03 Compatibilidad | CPU AM5 + Placa AM4 | Mostrar alerta de incompatibilidad | Alerta visible | Aprobado |
-| P04 | RF-04 Precio Total | Agregar 3 componentes | Precio total actualizado | Valor correcto mostrado | Aprobado |
-| P05 | RF-05 Guardar Configuración | Presionar botón Guardar | Archivo JSON creado | Archivo generado correctamente | Aprobado |
+| ID Prueba | Requisito Evaluado | Entrada | Resultado Esperado | Resultado Obtenido |Evidencia| Estado |
+|------------|--------------------|----------|--------------------|--------------------|--------|---------|
+| P01 | RF-01 Ensamblaje de PC en 3D | Cargar modelo CPU junto con Motherboard | Se muestra modelo correctamente | Se muestra correctamente || Aprobado |
+| P02 | RF-02 Validación del ensamblaje | Componente se presenta en la pantalla | CPU se fija en posición correcta | CPU colocado con éxito || Aprobado |
+| P03 | RF-03 Notificación de errores, advertencias y tips de seguridad. | CPU Socket LGA1700 - Mtoherboard | Mostrar alerta de incompatibilidad | Alerta visible || Aprobado |
+| P04 | RF-04 Generar reporte | Presionar la tecla "P" dentro del apartado de Setup para generar un reporte | txt generado correctametne | No se encontro el archivo en la ruta|| Fail |
+| P05 | RF-05 Acceder a biblioteca | Seleccionar Biblioteca en Menu | Cargar informacion general de componentes | Informacion cargada correctamente || Aprobado |
 
 ---
 
-## Evidencias
-
-Las capturas de las pruebas (en formato .png o .jpg, resolución 300 dpi) muestran el correcto funcionamiento del sistema en los casos exitosos y las observaciones en las iteraciones iniciales.
-
----
 
 ## Conclusiones de las pruebas
 
-El sistema **3D PC Builder** cumple con los requisitos funcionales mandatorios establecidos.  
-Las pruebas demostraron estabilidad en el renderizado 3D, validación lógica de compatibilidad y persistencia de datos en configuraciones guardadas.
