@@ -21,6 +21,9 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
    - Relación entre consumo total de energía y capacidad de la fuente de poder.  
    - Compatibilidad de almacenamiento con la interfaz disponible.
   
+   <img width="1618" height="659" alt="image" src="https://github.com/user-attachments/assets/59a69e3b-6ec3-440a-93fd-7b983b8bb5d2" />
+
+  
 3. **Notificación de errores, advertencias y tips de seguridad.**  
    Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
    - Mostrar alertas visuales o mensajes emergentes claros indicando el tipo de conflicto.  
