@@ -10,16 +10,18 @@ Sin el cumplimiento de estos requisitos, el software no podría considerarse fun
 1. **Ensamblaje de PC en 3D paso a paso.**  
    El sistema debe permitir el ensamblaje de una computadora en 3D de forma guiada, mostrando cómo se van agregando los componentes dentro del gabinete virtual en una secuencia lógica.
    
-2. **Validación automática de compatibilidad entre componentes.**
-   El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual. Esto incluye, entre otros aspectos: - Compatibilidad CPU – placa base. - Compatibilidad RAM – placa base. - Relación entre consumo total de energía y capacidad de la fuente de poder. - Compatibilidad de almacenamiento con la interfaz disponible.
-
-4. **Validación automática de compatibilidad entre componentes.**  
+2. **Validación automática de compatibilidad entre componentes.**  
    El sistema debe implementar un módulo de validación de compatibilidad que compruebe las relaciones entre los diferentes componentes del PC virtual.  
    Esto incluye, entre otros aspectos:
    - Compatibilidad CPU – placa base.  
    - Compatibilidad RAM – placa base.  
    - Relación entre consumo total de energía y capacidad de la fuente de poder.  
-   - Compatibilidad de almacenamiento con la interfaz disponible.  
+   - Compatibilidad de almacenamiento con la interfaz disponible.
+  
+3. **Notificación de errores, advertencias y tips de seguridad.** Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
+   - Mostrar alertas visuales o mensajes emergentes claros indicando el tipo de conflicto.
+   - Proporcionar sugerencias de corrección para guiar al usuario.
+   - Incluir tips o recomendaciones de seguridad sobre buenas prácticas de ensamblaje 
 
 5. **Notificación de errores, advertencias y tips de seguridad.**  
    Cuando se detecte una incompatibilidad o una posible mala práctica de armado, el sistema debe:
