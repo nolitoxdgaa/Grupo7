@@ -21,16 +21,16 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
    Permite realizar el ensamble con los componenetes seleccionados.
 
 5. **Visualizar Consejos de Seguridad**  
-   Se iran mostrando consejos de seguridad en el programa.
+   Se irán mostrando consejos de seguridad en el programa.
 
 ## Descripción de los elementos del diagrama
 
 - **Actor principal:** Usuario  
 - **Relaciones:**  
   - `include`: Calcular Precio Total incluye la selección de componentes.  
-  - `extend`: Verificar Compatibilidad se extiende del proceso de ensamblaje.  
+  - `include`: Verificar Compatibilidad se extiende del proceso de ensamblaje.  
 - **Reglas de negocio:**  
-  - No se permite guardar configuraciones con componentes incompatibles.  
+  - No se permite ensamblar configuraciones con componentes incompatibles.  
   - El sistema debe validar la existencia de un componente esencial (placa base, procesador, fuente de poder) antes de finalizar el ensamblaje.
 
 <img width="1129" height="583" alt="image" src="https://github.com/user-attachments/assets/55b1c7d8-e03a-4ee2-a4d9-51afe44e0aae" />
