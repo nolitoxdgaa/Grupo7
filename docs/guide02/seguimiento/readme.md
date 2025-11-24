@@ -40,7 +40,7 @@ Al comparar la versión inicial de la planificación con la ejecución real, se 
 
 - **Ajustes de alcance por viabilidad técnica y tiempo:**  
   Se realizaron ajustes razonables al alcance inicial, principalmente:
-  - Se priorizó la estabilidad del ensamblaje 3D, la validación de compatibilidad y la retroalimentación al usuario.  
+  - Se priorizó la estabilidad del ensamblaje 3D y la validación de compatibilidad.
   - Se descartaron funcionalidades secundarias, como ciertas interacciones 3D avanzadas, para no comprometer la calidad del núcleo del sistema.  
   Estos cambios son coherentes con la metodología evolutiva–exploratoria, que permite ajustar requisitos según la experiencia obtenida en cada iteración.
 
