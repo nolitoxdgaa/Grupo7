@@ -17,26 +17,26 @@ Fue elaborado utilizando **Bizagi Modeler**, aplicando notación **BPMN**.
 Representar de forma visual la interacción entre los procesos humanos (usuario) y automatizados (sistema), destacando las decisiones de compatibilidad y los cálculos dinámicos de precio.
 
 ---
-## 1.RM-01
+## 1.RM-01. Ensamblaje de PC en 3D paso a paso.
    
 <img width="1221" height="541" alt="image" src="https://github.com/user-attachments/assets/d9d1f962-00c1-4347-99ea-5cc48072096f" />
 
 ---
-## 2.RM-02
+## 2.RM-02. Validación automática de compatibilidad entre componentes.
 <img width="1618" height="659" alt="image" src="https://github.com/user-attachments/assets/0e87fdcf-aae3-417f-ad0f-e54692f6373d" />
 
 ---
-## 3.RM-03
+## 3.RM-03. Notificación de errores, advertencias y tips de seguridad.
 
 <img width="1273" height="709" alt="image" src="https://github.com/user-attachments/assets/57b48fa4-d26e-438b-bd78-8d0718f5eaeb" />
 
 ---
-## 4. RM-04
+## 4. RM-04. Generación de reporte del ensamblaje.
 
 <img width="1269" height="557" alt="image" src="https://github.com/user-attachments/assets/db3f2924-255e-470c-a02b-f25d120ff373" />
 
 ---
-## 5. RM - 05
+## 5. RM - 05. Acceso a una biblioteca de componentes.
 
 <img width="1572" height="537" alt="image" src="https://github.com/user-attachments/assets/3e523a47-7d6e-47af-afdd-e87841055427" />
 
