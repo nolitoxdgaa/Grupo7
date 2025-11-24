@@ -9,9 +9,8 @@ Fue elaborado utilizando **Bizagi Modeler**, aplicando notación **BPMN**.
 2. **Selección de categoría:** Se muestran las categorías de componentes (CPU, GPU, RAM, etc.).  
 3. **Visualización 3D:** El usuario observa los modelos tridimensionales y sus especificaciones.    
 4. **Verificación de compatibilidad:** El sistema analiza si los componentes son compatibles.  
-5. **Cálculo de precios:** Se muestra el costo unitario y total de los elementos seleccionados.  
-6. **Guardar configuración:** El usuario puede almacenar o exportar la configuración.  
-7. **Fin del proceso:** Se muestra un resumen general.
+5. **Cálculo de precios:** Se muestra el costo unitario y total de los elementos seleccionados.   
+6. **Fin del proceso:** Se muestra un resumen general.
 
 ## Objetivo del diagrama
 
