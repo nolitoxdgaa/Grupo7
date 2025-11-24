@@ -14,8 +14,14 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
 3. **Calcular Precio Total**  
    Se suman los valores de cada componente y se muestra el costo final actualizado dinámicamente.
 
-4. **Exportar Reporte (opcional)**  
-   Permite exportar la lista de componentes y precios a un archivo PDF o CSV.
+4. **Guardar Reporte**  
+   Permite exportar la lista de componentes y precios a un archivo Txt.
+
+5. **Selecionar y Ensamblar Componentes**  
+   Permite realizar el ensamble con los componenetes seleccionados.
+
+5. **Visualizar Consejos de Seguridad**  
+   Se iran mostrando consejos de seguridad en el programa.
 
 ## Descripción de los elementos del diagrama
 
@@ -27,5 +33,7 @@ Los casos de uso modelan las funcionalidades esenciales del prototipo y su compo
   - No se permite guardar configuraciones con componentes incompatibles.  
   - El sistema debe validar la existencia de un componente esencial (placa base, procesador, fuente de poder) antes de finalizar el ensamblaje.
 
-![Imagen de WhatsApp 2025-11-02 a las 01 54 31_badb82a8](https://github.com/user-attachments/assets/6c552186-2872-4670-9908-150515ffc577)
+<img width="1129" height="583" alt="image" src="https://github.com/user-attachments/assets/55b1c7d8-e03a-4ee2-a4d9-51afe44e0aae" />
+
+
 
